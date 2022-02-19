@@ -1,7 +1,19 @@
+import About from "./About";
+import Career from "./Career";
 import Contact from "./Contact";
+import Header from "./Header";
 import Hero from "./Hero";
-import Profile from "./Profile";
 import Projects from "./Projects";
+import Social from "./Social";
 import TransitionContainer from "./TransitionContainer";
 
-export { Contact, Hero, Profile, Projects, TransitionContainer };
+export {
+  About,
+  Career,
+  Contact,
+  Header,
+  Hero,
+  Projects,
+  Social,
+  TransitionContainer,
+};

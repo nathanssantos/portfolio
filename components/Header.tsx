@@ -7,7 +7,7 @@ const Contact = () => {
     <section className="contact">
       <LazyLoad height={200} once>
         <TransitionContainer>
-          <article>1</article>
+          <article>Header</article>
         </TransitionContainer>
       </LazyLoad>
     </section>
