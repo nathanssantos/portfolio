@@ -345,12 +345,6 @@ const GlobalStyle = createGlobalStyle`
       }
     }
   }
-
-  article {
-    height: 200px;
-    background-color: rgba(255,255,255,0.1);
-    margin-bottom: 20px;
-  }
 `;
 
 export default GlobalStyle;
