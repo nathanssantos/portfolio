@@ -5,7 +5,7 @@ import Styles from "./Styles";
 
 const Menu = () => {
   return (
-    <Styles>
+    <Styles className="menu">
       <ul>
         <li>
           <LazyLoad height={20} once>

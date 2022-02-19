@@ -11,6 +11,7 @@ import Menu from "./Menu/Menu";
 import Hero from "./Hero/Hero";
 import Projects from "./Projects/Projects";
 import Social from "./Social/Social";
+import ThemeProvider from "./ThemeProvider/ThemeProvider";
 import TransitionContainer from "./TransitionContainer/TransitionContainer";
 
 export {
@@ -27,5 +28,6 @@ export {
   Menu,
   Projects,
   Social,
+  ThemeProvider,
   TransitionContainer,
 };

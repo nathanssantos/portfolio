@@ -1,20 +1,22 @@
 import LazyLoad from "react-lazyload";
 import Styles from "./Styles";
-import { Drawer, Logo, Menu, TransitionContainer } from "../";
+import { Drawer, Logo, Menu } from "../";
 import Container from "../Container/Container";
 
 const Header = () => {
   return (
-    <Styles>
+    <Styles className="header">
       <Container>
         <div className="header__content">
-          <LazyLoad height={50} once>
-            <TransitionContainer delay={100}>
-              <Logo />
-            </TransitionContainer>
-          </LazyLoad>
-          <Menu />
-          <Drawer />
+          <div className="header__content__logo">
+            <Logo />
+          </div>
+          <div className="header__content__menu">
+            <Menu />
+          </div>
+          <div className="header__content__drawer">
+            <Drawer />
+          </div>
         </div>
       </Container>
     </Styles>
