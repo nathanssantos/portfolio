@@ -4,24 +4,24 @@ const Styles = styled.header`
   position: sticky;
   top: 0;
   background-color: rgba(26, 30, 34, 0.85);
-  margin-top: 50px;
-  backdrop-filter: blur(10px);
+  margin-top: 3.125rem;
+  backdrop-filter: blur(0.625rem);
 
   .header__content {
-    min-height: 64px;
+    min-height: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     &__menu {
       display: none;
-      @media (min-width: 900px) {
+      @media (min-width: 56.25rem) {
         display: flex;
       }
     }
 
     &__drawer {
-      @media (min-width: 900px) {
+      @media (min-width: 56.25rem) {
         display: none;
       }
     }

@@ -1,6 +1,6 @@
 import { Container } from "@mui/material";
 import LazyLoad from "react-lazyload";
-import { TransitionContainer } from "../";
+import { TransitionContainer } from "../../";
 import Styles from "./Styles";
 
 const Contact = () => {

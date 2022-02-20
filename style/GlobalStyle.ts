@@ -341,7 +341,7 @@ const GlobalStyle = createGlobalStyle`
 
   .MuiBackdrop-root {
     background-color: rgba(26, 30, 34, 0.85);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(0.313rem);
   }
 `;
 

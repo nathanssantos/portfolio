@@ -1,6 +1,5 @@
 import LazyLoad from "react-lazyload";
-
-import { TransitionContainer } from "../";
+import { TransitionContainer } from "../../";
 
 const Social = () => {
   return (

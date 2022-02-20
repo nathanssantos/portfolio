@@ -1,15 +1,15 @@
 import { Container } from "@mui/material";
 import LazyLoad from "react-lazyload";
-import { TransitionContainer } from "../";
+import { TransitionContainer } from "../../";
 import Styles from "./Styles";
 
-const Work = () => {
+const About = () => {
   return (
-    <Styles id="work" className="work">
+    <Styles id="about" className="about">
       <Container maxWidth="lg">
-        <LazyLoad height={200}>
+        <LazyLoad height={200} once>
           <TransitionContainer>
-            <article>Work</article>
+            <article>About</article>
           </TransitionContainer>
         </LazyLoad>
       </Container>
@@ -17,4 +17,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default About;

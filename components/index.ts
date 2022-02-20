@@ -1,31 +1,40 @@
-import About from "./About/About";
-import Experience from "./Experience/Experience";
-import Contact from "./Contact/Contact";
+// sections
+import About from "./sections/About/About";
+import Contact from "./sections/Contact/Contact";
+import Experience from "./sections/Experience/Experience";
+import Hero from "./sections/Hero/Hero";
+import Social from "./sections/Social/Social";
+import Work from "./sections/Work/Work";
+
+// components
+import Button from "./Button/Button";
 import Drawer from "./Drawer/Drawer";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import Layout from "./Layout/Layout";
 import Logo from "./Logo/Logo";
 import Menu from "./Menu/Menu";
-import Hero from "./Hero/Hero";
-import Work from "./Work/Work";
-import Social from "./Social/Social";
+import ProjectCard from "./ProjectCard/ProjectCard";
 import ThemeProvider from "./ThemeProvider/ThemeProvider";
 import TransitionContainer from "./TransitionContainer/TransitionContainer";
 
 export {
+  // sections
   About,
-  Experience,
   Contact,
+  Experience,
+  Hero,
+  Social,
+  Work,
+  // components
   Drawer,
+  Button,
   Footer,
   Header,
-  Hero,
   Layout,
   Logo,
   Menu,
-  Work,
-  Social,
+  ProjectCard,
   ThemeProvider,
   TransitionContainer,
 };

@@ -25,7 +25,7 @@ const Section = styled.section`
     `};
 
   & > div {
-    max-width: 1400px;
+    max-width: 87.5rem;
     margin: 0 auto;
   }
 
@@ -45,8 +45,8 @@ const Section = styled.section`
       );
       background-position: bottom;
       background-repeat: repeat-x;
-      background-size: 10px 2px;
-      padding-bottom: 6px;
+      background-size: 0.625rem 0.125rem;
+      padding-bottom: 0.375rem;
       ${media.bp600`
         font-size: 1.5rem;
       `};
