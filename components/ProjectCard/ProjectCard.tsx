@@ -1,15 +1,11 @@
-import LazyLoad from "react-lazyload";
-
-import { TransitionContainer } from "../";
+import { FadeInContainer } from "../";
 
 const ProjectCard = () => {
   return (
     <section className="project-card">
-      <LazyLoad height={200} once>
-        <TransitionContainer>
-          <article>ProjectCard</article>
-        </TransitionContainer>
-      </LazyLoad>
+      <FadeInContainer lazyLoad>
+        <article>ProjectCard</article>
+      </FadeInContainer>
     </section>
   );
 };

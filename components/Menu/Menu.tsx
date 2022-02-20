@@ -1,7 +1,6 @@
 import { List, ListItem } from "@mui/material";
 import Link from "next/link";
-import LazyLoad from "react-lazyload";
-import TransitionContainer from "../TransitionContainer/TransitionContainer";
+import FadeInContainer from "../FadeInContainer/FadeInContainer";
 import Styles from "./Styles";
 
 const Menu = () => {
@@ -9,32 +8,24 @@ const Menu = () => {
     <Styles className="menu">
       <List>
         <ListItem button>
-          <LazyLoad height={20} once>
-            <TransitionContainer delay={100}>
-              <Link href="/#about">About</Link>
-            </TransitionContainer>
-          </LazyLoad>
+          <FadeInContainer delay={100}>
+            <Link href="/#about">About</Link>
+          </FadeInContainer>
         </ListItem>
         <ListItem button>
-          <LazyLoad height={20} once>
-            <TransitionContainer delay={200}>
-              <Link href="/#experience">Experience</Link>
-            </TransitionContainer>
-          </LazyLoad>
+          <FadeInContainer delay={200}>
+            <Link href="/#experience">Experience</Link>
+          </FadeInContainer>
         </ListItem>
         <ListItem button>
-          <LazyLoad height={20} once>
-            <TransitionContainer delay={300}>
-              <Link href="/#work">Work</Link>
-            </TransitionContainer>
-          </LazyLoad>
+          <FadeInContainer delay={300}>
+            <Link href="/#work">Work</Link>
+          </FadeInContainer>
         </ListItem>
         <ListItem button>
-          <LazyLoad height={20} once>
-            <TransitionContainer delay={400}>
-              <Link href="/#contact">Contact</Link>
-            </TransitionContainer>
-          </LazyLoad>
+          <FadeInContainer delay={400}>
+            <Link href="/#contact">Contact</Link>
+          </FadeInContainer>
         </ListItem>
       </List>
     </Styles>

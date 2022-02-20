@@ -1,14 +1,11 @@
-import LazyLoad from "react-lazyload";
-import { TransitionContainer } from "../../";
+import { FadeInContainer } from "../../";
 
 const Social = () => {
   return (
     <section className="social">
-      <LazyLoad height={200} once>
-        <TransitionContainer>
-          <article>Social</article>
-        </TransitionContainer>
-      </LazyLoad>
+      <FadeInContainer lazyLoad>
+        <article>Social</article>
+      </FadeInContainer>
     </section>
   );
 };
