@@ -24,7 +24,7 @@ const Social = () => {
           </FadeInContainer>
           <FadeInContainer delay={1000}>
             <a
-              href="https://github.com/nathanssantos/"
+              href="https://www.instagram.com/nathanssantosdev/"
               target="_blank"
               rel="noreferrer"
             >

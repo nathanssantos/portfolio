@@ -3,12 +3,26 @@ import { media, SCTheme } from "../../style";
 const { colors, fonts } = SCTheme;
 
 const Styles = styled.section`
-  ${media.bp900`
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  `};
+  .left,
+  .right {
+    ${media.bp900`
+      position: fixed;
+      bottom: 0;
+      min-height: 20rem;
+    `};
+  }
+
+  .left {
+    ${media.bp900`
+      left: 2.25rem;
+    `};
+  }
+
+  .right {
+    ${media.bp900`
+      right: 2.25rem;
+    `};
+  }
 
   .content {
     display: flex;
@@ -19,7 +33,6 @@ const Styles = styled.section`
     margin-bottom: 6rem;
 
     ${media.bp900`
-      min-height: 20rem;
       flex-direction: row;
       margin-bottom: 0;
       align-items: initial;
@@ -70,6 +83,7 @@ const Styles = styled.section`
       font-size: 0.8rem;
       letter-spacing: 0.1em;
       color: ${colors.slate};
+      line-height: 2.25rem;
 
       &:hover {
         color: ${colors.green};
