@@ -1,5 +1,7 @@
+import Styles from "./Styles";
+
 const Logo = () => {
-  return <div>Logo</div>;
+  return <Styles>NTN</Styles>;
 };
 
 export default Logo;

@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
-import { About, Contact, Experience, Hero, Work } from "../components";
+import { About, Contact, Experience, Hero, Social, Work } from "../components";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="home">
       <Hero />
       <About />
       <Experience />

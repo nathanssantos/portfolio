@@ -1,33 +1,41 @@
-import { List, ListItem } from "@mui/material";
 import Link from "next/link";
+import Button from "@mui/material/Button";
 import FadeInContainer from "../FadeInContainer/FadeInContainer";
 import Styles from "./Styles";
 
 const Menu = () => {
   return (
     <Styles className="menu">
-      <List>
-        <ListItem button>
+      <ul>
+        <li>
           <FadeInContainer delay={100}>
-            <Link href="/#about">About</Link>
+            <Link href="/#about" passHref>
+              <Button color="primary">About</Button>
+            </Link>
           </FadeInContainer>
-        </ListItem>
-        <ListItem button>
+        </li>
+        <li>
           <FadeInContainer delay={200}>
-            <Link href="/#experience">Experience</Link>
+            <Link href="/#experience" passHref>
+              <Button>Experience</Button>
+            </Link>
           </FadeInContainer>
-        </ListItem>
-        <ListItem button>
+        </li>
+        <li>
           <FadeInContainer delay={300}>
-            <Link href="/#work">Work</Link>
+            <Link href="/#work" passHref>
+              <Button>Work</Button>
+            </Link>
           </FadeInContainer>
-        </ListItem>
-        <ListItem button>
+        </li>
+        <li>
           <FadeInContainer delay={400}>
-            <Link href="/#contact">Contact</Link>
+            <Link href="/#contact" passHref>
+              <Button>Contact</Button>
+            </Link>
           </FadeInContainer>
-        </ListItem>
-      </List>
+        </li>
+      </ul>
     </Styles>
   );
 };

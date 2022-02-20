@@ -1,16 +1,8 @@
 import React from "react";
 import { ThemeProvider as SCThemeProvider } from "styled-components";
-import {
-  ThemeProvider as MuiThemeProvider,
-  createTheme,
-} from "@mui/material/styles";
-import { theme, GlobalStyle } from "../../style";
-
-const muiTheme = createTheme({
-  palette: {
-    mode: "dark",
-  },
-});
+import { ThemeProvider as MuiThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import { SCTheme, GlobalStyle, MUITheme } from "../../style";
 
 interface ThemeProviderProps {
   children: React.ReactElement;
@@ -20,8 +12,9 @@ const ThemeProvider = (props: ThemeProviderProps) => {
   const { children } = props;
 
   return (
-    <SCThemeProvider theme={theme}>
-      <MuiThemeProvider theme={muiTheme}>
+    <SCThemeProvider theme={SCTheme}>
+      <MuiThemeProvider theme={MUITheme}>
+        <CssBaseline />
         <GlobalStyle />
         {children}
       </MuiThemeProvider>

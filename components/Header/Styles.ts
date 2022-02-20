@@ -1,29 +1,30 @@
 import styled from "styled-components";
+import { media } from "../../style";
 
-const Styles = styled.header`
-  position: sticky;
-  top: 0;
-  background-color: rgba(26, 30, 34, 0.85);
-  margin-top: 3.125rem;
-  backdrop-filter: blur(0.625rem);
+const Styles = styled.div`
+  width: 100%;
 
-  .header__content {
-    min-height: 4rem;
+  .MuiContainer-root {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 
-    &__menu {
-      display: none;
-      @media (min-width: 56.25rem) {
-        display: flex;
-      }
+    ${media.bp1400`
+      padding: 0 1.5rem;
+    `};
+  }
+
+  .menu {
+    display: none;
+    @media (min-width: 56.25rem) {
+      display: flex;
     }
+  }
 
-    &__drawer {
-      @media (min-width: 56.25rem) {
-        display: none;
-      }
+  .drawer {
+    @media (min-width: 56.25rem) {
+      display: none;
     }
   }
 `;

@@ -1,6 +1,6 @@
 import { css } from "styled-components";
-import { theme } from "../style";
-const { colors } = theme;
+import { SCTheme } from "../style";
+const { colors } = SCTheme;
 
 const mixins = {
   flexCenter: css`

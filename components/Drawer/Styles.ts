@@ -9,6 +9,10 @@ const Styles = styled(Box)`
   .menu {
     ul {
       flex-direction: column;
+
+      .MuiButton-root {
+        width: 100%;
+      }
     }
   }
 `;

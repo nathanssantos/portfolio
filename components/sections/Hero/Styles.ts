@@ -1,19 +1,19 @@
 import styled from "styled-components";
-import { theme } from "../../../style";
-const { colors, fonts } = theme;
+import { SCTheme, Section } from "../../../style";
+const { colors, fonts } = SCTheme;
 
-const Styles = styled.section`
+const Styles = styled(Section)`
   margin-bottom: 3.125rem;
   padding: 6.25rem 0;
 
-  .hero__content {
+  .content {
     display: flex;
     flex-direction: column;
 
     h1 {
-      font-size: clamp(2.375rem, 10vw, 5rem);
-      margin-bottom: 0;
+      font-size: clamp(2.375rem, 9vw, 5rem);
       font-weight: 800;
+      line-height: 1;
       background: linear-gradient(
         94.23deg,
         ${colors.green} 12.41%,
@@ -26,14 +26,15 @@ const Styles = styled.section`
     }
 
     h2 {
-      font-size: clamp(1.438rem, 5.5vw, 2.813rem);
-      margin-bottom: 1.875rem;
+      font-size: clamp(1.438rem, 5vw, 2.813rem);
       font-weight: 700;
+      line-height: 1;
+      margin-bottom: 1.875rem;
     }
 
     h3 {
-      margin-bottom: 0;
       font-size: 1.125rem;
+      line-height: 1;
       font-weight: 300;
       font-family: ${fonts.mono};
       color: ${colors.green};

@@ -3,7 +3,7 @@ import About from "./sections/About/About";
 import Contact from "./sections/Contact/Contact";
 import Experience from "./sections/Experience/Experience";
 import Hero from "./sections/Hero/Hero";
-import Social from "./sections/Social/Social";
+import Social from "./Social/Social";
 import Work from "./sections/Work/Work";
 
 // components

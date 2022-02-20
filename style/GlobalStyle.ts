@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import theme from "./theme";
+import theme from "./SCTheme";
 const { colors, fonts } = theme;
 
 const GlobalStyle = createGlobalStyle`
@@ -275,7 +275,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: ${fonts.inter};
-    color: #a8b2d1;
+    color: ${colors.slate};
     background-color: ${colors.black};
   }
 

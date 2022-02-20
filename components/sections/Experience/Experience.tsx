@@ -4,11 +4,15 @@ import Styles from "./Styles";
 
 const Experience = () => {
   return (
-    <Styles id="experience" className="experience">
+    <Styles id="experience">
       <Container maxWidth="lg">
-        <FadeInContainer height={200} once>
-          <article>Experience</article>
-        </FadeInContainer>
+        <div className="content">
+          <header>
+            <FadeInContainer lazyLoad>
+              <h2>Experience</h2>
+            </FadeInContainer>
+          </header>
+        </div>
       </Container>
     </Styles>
   );

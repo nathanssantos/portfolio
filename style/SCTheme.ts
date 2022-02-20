@@ -1,10 +1,11 @@
-const theme = {
+const SCTheme = {
   colors: {
     orange: "#f66a0a",
     green: "#64ffda",
     blue: "#5374fa",
     lightblue: "#79b8ff",
     lightestBlue: "#c8e1ff",
+    slate: "#a8b2d1",
     offWhite: "#f6f8fa",
     grey: "#6a737d",
     grey2: "#586069",
@@ -22,4 +23,4 @@ const theme = {
   transition: `all 0.2s ease-in-out`,
 };
 
-export default theme;
+export default SCTheme;

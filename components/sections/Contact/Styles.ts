@@ -1,9 +1,8 @@
 import styled from "styled-components";
+import { Section } from "../../../style";
 
-const Styles = styled.section`
-  min-height: 100vh;
-  padding-top: 5rem;
-  background-color: rgba(255, 255, 255, 0.1);
+const Styles = styled(Section)`
+  margin-bottom: 2.5rem;
 `;
 
 export default Styles;

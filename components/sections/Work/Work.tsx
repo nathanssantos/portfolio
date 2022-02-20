@@ -4,11 +4,15 @@ import Styles from "./Styles";
 
 const Work = () => {
   return (
-    <Styles id="work" className="work">
+    <Styles id="work">
       <Container maxWidth="lg">
-        <FadeInContainer lazyLoad>
-          <article>Work</article>
-        </FadeInContainer>
+        <div className="content">
+          <header>
+            <FadeInContainer lazyLoad>
+              <h2>Work</h2>
+            </FadeInContainer>
+          </header>
+        </div>
       </Container>
     </Styles>
   );

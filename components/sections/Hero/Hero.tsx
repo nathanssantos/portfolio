@@ -4,9 +4,9 @@ import Styles from "./Styles";
 
 const Hero = () => {
   return (
-    <Styles className="hero">
+    <Styles>
       <Container maxWidth="lg">
-        <div className="hero__content">
+        <div className="content">
           <FadeInContainer delay={500}>
             <h3>Hi, my name is</h3>
           </FadeInContainer>
@@ -14,7 +14,7 @@ const Hero = () => {
             <h1>Nathan Santos.</h1>
           </FadeInContainer>
           <FadeInContainer delay={700}>
-            <h2>I build things for the web.</h2>
+            <h2>I create things for the web.</h2>
           </FadeInContainer>
           <FadeInContainer delay={800}>
             <h4>
