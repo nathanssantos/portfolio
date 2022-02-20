@@ -9,7 +9,7 @@ const Styles = styled.section`
     flex-direction: column;
 
     h1 {
-      font-size: clamp(40px, 10vw, 80px);
+      font-size: clamp(38px, 10vw, 80px);
       margin-bottom: 0;
       font-weight: 800;
       background: linear-gradient(
@@ -24,7 +24,7 @@ const Styles = styled.section`
     }
 
     h2 {
-      font-size: clamp(24px, 5.5vw, 45px);
+      font-size: clamp(23px, 5.5vw, 45px);
       margin-bottom: 30px;
       font-weight: 700;
     }

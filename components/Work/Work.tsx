@@ -3,13 +3,13 @@ import LazyLoad from "react-lazyload";
 import { TransitionContainer } from "../";
 import Styles from "./Styles";
 
-const About = () => {
+const Work = () => {
   return (
-    <Styles id="about" className="about">
+    <Styles id="work" className="work">
       <Container maxWidth="lg">
-        <LazyLoad height={200} once>
+        <LazyLoad height={200}>
           <TransitionContainer>
-            <article>About</article>
+            <article>Work</article>
           </TransitionContainer>
         </LazyLoad>
       </Container>
@@ -17,4 +17,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Work;

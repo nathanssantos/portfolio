@@ -8,7 +8,7 @@ import Layout from "./Layout/Layout";
 import Logo from "./Logo/Logo";
 import Menu from "./Menu/Menu";
 import Hero from "./Hero/Hero";
-import Projects from "./Projects/Projects";
+import Work from "./Work/Work";
 import Social from "./Social/Social";
 import ThemeProvider from "./ThemeProvider/ThemeProvider";
 import TransitionContainer from "./TransitionContainer/TransitionContainer";
@@ -24,7 +24,7 @@ export {
   Layout,
   Logo,
   Menu,
-  Projects,
+  Work,
   Social,
   ThemeProvider,
   TransitionContainer,

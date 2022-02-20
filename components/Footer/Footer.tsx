@@ -4,7 +4,7 @@ import Styles from "./Styles";
 const Footer = () => {
   return (
     <Styles className="footer">
-      <Container>Built by Nathan S. Santos</Container>
+      <Container>Designed and built by Nathan S. Santos</Container>
     </Styles>
   );
 };

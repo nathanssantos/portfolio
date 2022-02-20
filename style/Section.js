@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { theme, media } from "../style";
+import { theme, media } from ".";
 const { colors } = theme;
 
 const Section = styled.section`
