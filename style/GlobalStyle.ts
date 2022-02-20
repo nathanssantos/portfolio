@@ -267,10 +267,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
   }
 
-  ::selection {
-    background-color: ${colors.blue};
-    color: ${colors.white};
-  }
 
   body {
     margin: 0;
@@ -278,7 +274,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: ${fonts.inter};
-    color: ${colors.offWhite};
+    color: #a8b2d1;
     background-color: ${colors.black};
   }
 
@@ -297,10 +293,6 @@ const GlobalStyle = createGlobalStyle`
     transition: ${theme.transition};
     color: ${colors.blue};
     display: inline-block;
-
-    &:hover,
-    &:focus {
-    }
   }
 
   ul, ol {
@@ -344,6 +336,11 @@ const GlobalStyle = createGlobalStyle`
         opacity: 0.5;
       }
     }
+  }
+
+  .MuiBackdrop-root {
+    background-color: rgba(26, 30, 34, 0.85);
+    backdrop-filter: blur(5px);
   }
 `;
 

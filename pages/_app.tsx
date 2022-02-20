@@ -6,7 +6,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <div className="app">
       <Head>
-        <title>Nathan S. Santos | Portfolio</title>
+        <title>Nathan S. Santos</title>
         <meta name="description" content="My personal projects portfolio." />
         <link rel="icon" href="/favicon.ico" />
       </Head>

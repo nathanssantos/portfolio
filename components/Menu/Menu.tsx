@@ -10,28 +10,28 @@ const Menu = () => {
       <List>
         <ListItem button>
           <LazyLoad height={20} once>
-            <TransitionContainer delay={200}>
+            <TransitionContainer delay={100}>
               <Link href="/#about">About</Link>
             </TransitionContainer>
           </LazyLoad>
         </ListItem>
         <ListItem button>
           <LazyLoad height={20} once>
-            <TransitionContainer delay={300}>
+            <TransitionContainer delay={200}>
               <Link href="/#experience">Experience</Link>
             </TransitionContainer>
           </LazyLoad>
         </ListItem>
         <ListItem button>
           <LazyLoad height={20} once>
-            <TransitionContainer delay={400}>
+            <TransitionContainer delay={300}>
               <Link href="/#work">Work</Link>
             </TransitionContainer>
           </LazyLoad>
         </ListItem>
         <ListItem button>
           <LazyLoad height={20} once>
-            <TransitionContainer delay={500}>
+            <TransitionContainer delay={400}>
               <Link href="/#contact">Contact</Link>
             </TransitionContainer>
           </LazyLoad>

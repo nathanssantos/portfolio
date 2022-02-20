@@ -3,6 +3,9 @@ import styled from "styled-components";
 const Styles = styled.header`
   position: sticky;
   top: 0;
+  background-color: rgba(26, 30, 34, 0.85);
+  margin-top: 50px;
+  backdrop-filter: blur(10px);
 
   .header__content {
     min-height: 64px;

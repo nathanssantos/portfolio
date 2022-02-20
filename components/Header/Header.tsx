@@ -1,12 +1,12 @@
 import LazyLoad from "react-lazyload";
 import Styles from "./Styles";
 import { Drawer, Logo, Menu } from "../";
-import Container from "../Container/Container";
+import { Container } from "@mui/material";
 
 const Header = () => {
   return (
     <Styles className="header">
-      <Container>
+      <Container maxWidth="lg">
         <div className="header__content">
           <div className="header__content__logo">
             <Logo />

@@ -1,7 +1,6 @@
 import About from "./About/About";
 import Experience from "./Experience/Experience";
 import Contact from "./Contact/Contact";
-import Container from "./Container/Container";
 import Drawer from "./Drawer/Drawer";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
@@ -18,7 +17,6 @@ export {
   About,
   Experience,
   Contact,
-  Container,
   Drawer,
   Footer,
   Header,

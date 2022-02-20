@@ -1,16 +1,11 @@
-import LazyLoad from "react-lazyload";
-
-import { TransitionContainer } from "../";
+import { Container } from "@mui/material";
+import Styles from "./Styles";
 
 const Footer = () => {
   return (
-    <section className="footer">
-      <LazyLoad height={200} once>
-        <TransitionContainer>
-          <article>Footer</article>
-        </TransitionContainer>
-      </LazyLoad>
-    </section>
+    <Styles className="footer">
+      <Container>Built by Nathan S. Santos</Container>
+    </Styles>
   );
 };
 

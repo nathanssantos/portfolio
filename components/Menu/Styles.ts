@@ -5,6 +5,11 @@ const Styles = styled.nav`
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
+    a {
+      color: #64ffda;
+      font-family: SF Mono;
+    }
   }
 `;
 
