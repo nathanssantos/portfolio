@@ -2,7 +2,13 @@ import styled from "styled-components";
 import { Section } from "../../../style";
 
 const Styles = styled(Section)`
-  margin-bottom: 2.5rem;
+  text-align: center;
+  margin-bottom: 0;
+
+  p {
+    margin: 0 auto 3rem;
+    max-width: 540px;
+  }
 `;
 
 export default Styles;

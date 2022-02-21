@@ -21,7 +21,7 @@ const MUITheme = createTheme({
         root: {
           backgroundColor: "rgba(26, 30, 34, 0.85)",
           marginTop: "3.125rem",
-          backdropFilter: "blur(0.625rem)",
+          backdropFilter: "blur(0.313rem)",
           backgroundImage: "none",
           boxShadow: "none",
         },

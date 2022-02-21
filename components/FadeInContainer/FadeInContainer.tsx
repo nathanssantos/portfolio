@@ -14,6 +14,7 @@ interface FadeInContainerProps {
   height?: number;
   delay?: number;
   once?: boolean;
+  offset?: number;
 }
 
 const TransitionContainer = (props: TransitionContainerProps) => {
@@ -40,11 +41,17 @@ const FadeInContainer = (props: FadeInContainerProps) => {
     height = 16,
     delay = 200,
     once = true,
+    offset = -50,
   } = props;
 
   if (lazyLoad) {
     return (
-      <LazyLoad height={height} once={once} classNamePrefix="fade-in-container">
+      <LazyLoad
+        height={height}
+        once={once}
+        offset={offset}
+        classNamePrefix="fade-in-container"
+      >
         <TransitionContainer delay={delay}>{children}</TransitionContainer>
       </LazyLoad>
     );

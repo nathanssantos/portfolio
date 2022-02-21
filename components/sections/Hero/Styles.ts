@@ -3,7 +3,7 @@ import { SCTheme, Section } from "../../../style";
 const { colors, fonts } = SCTheme;
 
 const Styles = styled(Section)`
-  margin-bottom: 3.125rem;
+  margin-bottom: 2.6rem;
   padding: 6.25rem 0;
 
   .content {
@@ -26,7 +26,7 @@ const Styles = styled(Section)`
     }
 
     h2 {
-      font-size: clamp(1.438rem, 5vw, 2.813rem);
+      font-size: clamp(1.438rem, 5vw, 3.2rem);
       font-weight: 700;
       line-height: 1;
       margin-bottom: 1.875rem;

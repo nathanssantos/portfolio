@@ -14,7 +14,7 @@ const Styles = styled.div`
   -webkit-text-fill-color: transparent; */
   color: ${colors.green};
   font-weight: 800;
-  font-size: 30px;
+  font-size: 1.875rem;
 `;
 
 export default Styles;

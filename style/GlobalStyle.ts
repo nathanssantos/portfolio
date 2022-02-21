@@ -292,7 +292,7 @@ const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
     transition: ${theme.transition};
-    color: ${colors.blue};
+    color: ${colors.green};
     display: inline-block;
   }
 
