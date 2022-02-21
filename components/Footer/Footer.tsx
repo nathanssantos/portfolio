@@ -8,7 +8,12 @@ const Footer = () => {
       <Social />
       <Container>
         Design inspired by{" "}
-        <a href="https://brittanychiang.com/" target="_blank" rel="noreferrer">
+        <a
+          href="https://brittanychiang.com/"
+          target="_blank"
+          rel="noreferrer"
+          className="underline-hover"
+        >
           Brittany Chiang
         </a>{" "}
         and built by Nathan S. Santos

@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import theme from "./SCTheme";
-const { colors, fonts } = theme;
+const { colors, fonts, transition } = theme;
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -337,6 +337,28 @@ const GlobalStyle = createGlobalStyle`
         opacity: 0.5;
       }
     }
+  }
+
+  .underline-hover {
+    position: relative;
+    
+    &:after {
+      content: "";
+      height: 0.063rem;
+      width: 0;
+      background: linear-gradient(to right, transparent, ${colors.green}, transparent);
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 100%);
+      transition: ${transition};
+      position: absolute;
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    } 
   }
 
   .MuiBackdrop-root {

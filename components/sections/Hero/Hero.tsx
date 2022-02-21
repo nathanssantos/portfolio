@@ -20,7 +20,12 @@ const Hero = () => {
             <h4>
               I’m a Front-end engineer with 5 years of experience specialized in
               building exceptional digital products. Currently, I’m Tech Lead at{" "}
-              <a href="https://w16.dev/" target="_blank" rel="noreferrer">
+              <a
+                href="https://w16.dev/"
+                target="_blank"
+                rel="noreferrer"
+                className="underline-hover"
+              >
                 W16 Software House
               </a>
               .
