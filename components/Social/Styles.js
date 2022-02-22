@@ -72,7 +72,9 @@ const Styles = styled.section`
 
     &:hover {
       color: ${colors.green};
-      transform: translate3d(0, -0.188rem, 0);
+      ${media.bp900`
+        transform: translate3d(0, -0.188rem, 0);
+      `};
     }
   }
 
@@ -87,16 +89,25 @@ const Styles = styled.section`
 
     a {
       font-family: ${fonts.mono};
-      line-height: 1;
       font-size: 0.8rem;
       letter-spacing: 0.1em;
       color: ${colors.slate};
-      line-height: 2.25rem;
       transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+      ${media.bp900`
+        line-height: 2.25rem;
+
+        &::after {
+          display: none;
+        }
+      `};
 
       &:hover {
         color: ${colors.green};
-        transform: translate3d(0, -0.188rem, 0);
+
+        ${media.bp900`
+          transform: translate3d(0, -0.188rem, 0);
+        `};
       }
     }
   }

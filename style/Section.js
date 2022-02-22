@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { media } from ".";
-import { SCTheme } from "../style";
+import { SCTheme } from ".";
 const { colors, fonts } = SCTheme;
 
 const Section = styled.section`
@@ -32,7 +32,7 @@ const Section = styled.section`
     h2 {
       font-family: ${fonts.mono};
       color: ${colors.green};
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       display: flex;
       align-items: center;
       white-space: nowrap;

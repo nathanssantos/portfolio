@@ -7,7 +7,7 @@ const Styles = styled(Section)`
 
   p {
     margin: 0 auto 3rem;
-    max-width: 540px;
+    max-width: 33.75rem;
   }
 `;
 

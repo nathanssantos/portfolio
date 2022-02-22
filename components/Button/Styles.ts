@@ -15,11 +15,11 @@ const Styles = styled(Button)`
   .background-cover {
     background-color: #1a1e22;
     position: absolute;
-    left: 1px;
-    right: 1px;
-    top: 1px;
-    bottom: 1px;
-    border-radius: 4px;
+    left: 0.063rem;
+    right: 0.063rem;
+    top: 0.063rem;
+    bottom: 0.063rem;
+    border-radius: 0.25rem;
     transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   }
 
@@ -38,10 +38,10 @@ const Styles = styled(Button)`
 
   &:hover {
     .background-cover {
-      left: 3px;
-      right: 3px;
-      top: 3px;
-      bottom: 3px;
+      left: 0.188rem;
+      right: 0.188rem;
+      top: 0.188rem;
+      bottom: 0.188rem;
     }
   }
 `;

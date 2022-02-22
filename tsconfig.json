@@ -22,7 +22,12 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "style/Section.js",
+    "components/Social/Styles.js",
+    "components/Header/Styles.js",
+    "style/media.js",
+    "components/sections/Work/Styles.js"
   ],
   "exclude": [
     "node_modules"

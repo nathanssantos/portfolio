@@ -52,6 +52,7 @@ const Social = () => {
                 href="mailto:nathansilvasantos@gmail.com"
                 target="_blank"
                 rel="noreferrer"
+                className="underline-hover"
               >
                 nathansilvasantos@gmail.com
               </a>

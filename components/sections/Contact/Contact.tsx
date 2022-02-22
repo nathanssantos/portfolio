@@ -8,17 +8,17 @@ const Contact = () => {
       <Container maxWidth="lg">
         <div className="content">
           <header className="align-center">
-            <FadeInContainer lazyLoad>
+            <FadeInContainer lazyLoad offset={-50}>
               <h2>Get in Touch</h2>
             </FadeInContainer>
           </header>
-          <FadeInContainer lazyLoad delay={300}>
+          <FadeInContainer lazyLoad offset={-50} delay={300}>
             <p>
               Feel free to contact me, my inbox is always open. Whether you have
               a question or just want to say hi, I’ll do my best to answer you!
             </p>
           </FadeInContainer>
-          <FadeInContainer lazyLoad delay={400}>
+          <FadeInContainer lazyLoad offset={-50} delay={400}>
             <a href="mailto:nathansilvasantos@gmail.com">
               <Button>Say Hello</Button>
             </a>
