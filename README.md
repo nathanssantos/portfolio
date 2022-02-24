@@ -1,1 +1,1 @@
-Nathan S. Santos Portfolio v0.1.0
+My open source projects portfolio built with Next.js.
