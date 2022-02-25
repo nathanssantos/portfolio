@@ -1,55 +1,65 @@
-import styled, { css } from "styled-components";
-import { theme, media } from "../style";
-const { colors } = theme;
+import styled from "styled-components";
+import { media } from ".";
+import { SCTheme } from ".";
+const { colors, fonts } = SCTheme;
 
 const Section = styled.section`
-  padding: 3rem 5rem;
+  margin-bottom: 4rem;
+  padding-top: 4rem;
 
-  ${media.bp900`
-    padding: 2rem;
-  `};
-  ${media.bp400`
-    padding: 1rem;
-  `};
+  .content {
+    /* padding: 6rem 0; */
 
-  ${(props) =>
-    props.dark &&
-    css`
-      background-color: ${colors.black};
-      color: ${colors.lightestBlue};
-      padding-bottom: 10rem;
-      ${media.bp900`
-        padding-top: 2rem;
-        padding-bottom: 10rem;
-      `};
+    ${media.bp900`
+      padding: 0 6rem;
     `};
 
-  & > div {
-    max-width: 1400px;
-    margin: 0 auto;
+    ${media.bp1400`
+      padding: 0;
+    `};
   }
 
   header {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+
+    .fade-in-container-wrapper,
+    .transition-container {
+      width: 100%;
+    }
 
     h2 {
-      display: inline-block;
-      margin: 0;
-      font-size: 1.75rem;
-      background-image: linear-gradient(
-        90deg,
-        #d1d5da 50%,
-        hsla(0, 0%, 100%, 0) 0
-      );
-      background-position: bottom;
-      background-repeat: repeat-x;
-      background-size: 10px 2px;
-      padding-bottom: 6px;
-      ${media.bp600`
+      font-family: ${fonts.mono};
+      color: ${colors.green};
+      font-size: 1.25rem;
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+
+      ${media.bp900`
         font-size: 1.5rem;
       `};
+
+      &:after {
+        content: "";
+        height: 0.063rem;
+        width: 100%;
+        margin-left: 1rem;
+        background: linear-gradient(to right, transparent, ${colors.slate});
+      }
+    }
+
+    &.align-center {
+      h2 {
+        &:before {
+          content: "";
+          height: 0.063rem;
+          width: 100%;
+          margin-right: 1rem;
+          background: linear-gradient(to right, ${colors.slate}, transparent);
+        }
+      }
     }
   }
 `;

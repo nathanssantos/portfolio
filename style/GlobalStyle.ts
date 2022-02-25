@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import theme from "./theme";
-const { colors, fonts } = theme;
+import SCTheme from "./SCTheme";
+const { colors, fonts, transition } = SCTheme;
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -259,6 +259,9 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: ${colors.slate};
   }
 
   *,
@@ -267,10 +270,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
   }
 
-  ::selection {
-    background-color: ${colors.blue};
-    color: ${colors.white};
-  }
 
   body {
     margin: 0;
@@ -278,8 +277,21 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: ${fonts.inter};
-    color: ${colors.offWhite};
+    color: ${colors.slate};
     background-color: ${colors.black};
+    
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: none;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background-color: ${colors.slate};
+      border-radius: 3px;
+    }
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -294,13 +306,9 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
-    transition: ${theme.transition};
-    color: ${colors.blue};
+    transition: ${SCTheme.transition};
+    color: ${colors.green};
     display: inline-block;
-
-    &:hover,
-    &:focus {
-    }
   }
 
   ul, ol {
@@ -323,7 +331,7 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     border: 0;
     border-radius: 0;
-    transition: ${theme.transition};
+    transition: ${SCTheme.transition};
     &:focus,
     &:active {
       outline: 0;
@@ -346,10 +354,31 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  article {
-    height: 200px;
-    background-color: rgba(255,255,255,0.1);
-    margin-bottom: 20px;
+  .underline-hover {
+    position: relative;
+    
+    &:after {
+      content: "";
+      height: 0.063rem;
+      width: 0;
+      background: linear-gradient(to right, transparent, ${colors.green}, transparent);
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 100%);
+      transition: ${transition};
+      position: absolute;
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    } 
+  }
+
+  .MuiBackdrop-root {
+    background-color: rgba(26, 30, 34, 0.85);
+    backdrop-filter: blur(0.313rem);
   }
 `;
 

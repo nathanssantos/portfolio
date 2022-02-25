@@ -1,13 +1,21 @@
+import Head from "next/head";
 import type { AppProps } from "next/app";
-import { ThemeProvider } from "styled-components";
-import { theme, GlobalStyle } from "../style";
+import { Layout, ThemeProvider } from "../components";
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <div className="app">
+      <Head>
+        <title>Nathan S. Santos</title>
+        <meta name="description" content="My personal projects portfolio." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <ThemeProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
+    </div>
   );
-}
+};
 export default MyApp;
