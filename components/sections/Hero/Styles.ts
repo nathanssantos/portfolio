@@ -3,15 +3,17 @@ import { SCTheme, Section } from "../../../style";
 const { colors, fonts } = SCTheme;
 
 const Styles = styled(Section)`
-  margin-bottom: 2.6rem;
-  padding: 6.25rem 0;
+  padding: 6.25rem 0 0;
+  min-height: 100vh;
+  margin-bottom: 0;
 
   .content {
     display: flex;
     flex-direction: column;
+    padding-top: 6rem;
 
     h1 {
-      font-size: clamp(2.375rem, 9vw, 5rem);
+      font-size: clamp(2.2rem, 5vw, 5rem);
       font-weight: 800;
       line-height: 1;
       background: linear-gradient(
@@ -26,7 +28,7 @@ const Styles = styled(Section)`
     }
 
     h2 {
-      font-size: clamp(1.438rem, 5vw, 3.2rem);
+      font-size: clamp(2.2rem, 5vw, 5rem);
       font-weight: 700;
       line-height: 1;
       margin-bottom: 1.875rem;

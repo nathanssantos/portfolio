@@ -30,13 +30,13 @@ export default async function handler(
       "evolution-graph",
       "clockify-teams",
       "podjs",
-      "react-boilerplate",
+      "react-vite-boilerplate",
       "react-native-boilerplate",
       "portfolio",
     ];
 
     const filteredRepositories = data.filter(({ name }: Repository) =>
-      favoriteRepositories.includes(name)
+      favoriteRepositories?.includes(name)
     );
 
     res.status(200).json(filteredRepositories);

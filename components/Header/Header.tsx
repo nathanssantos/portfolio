@@ -34,25 +34,25 @@ const Header = () => {
       className="header"
       position="sticky"
       style={{
-        transform: headerShown ? "none" : "translate3d(0, -100%,0)",
+        transform: headerShown
+          ? "none"
+          : "translate3d(0, calc(-100% - 3.125rem),0)",
         transition: "transform 0.25s cubic-bezier(0.645,0.045,0.355,1)",
       }}
     >
       <Toolbar>
         <Styles>
-          <Container maxWidth="lg">
-            <div className="logo">
-              <a href="#">
-                <Logo />
-              </a>
-            </div>
-            <div className="menu">
-              <Menu />
-            </div>
-            <div className="drawer">
-              <Drawer />
-            </div>
-          </Container>
+          <div className="logo">
+            <a href="#">
+              <Logo />
+            </a>
+          </div>
+          <div className="menu">
+            <Menu />
+          </div>
+          <div className="drawer">
+            <Drawer />
+          </div>
         </Styles>
       </Toolbar>
     </AppBar>

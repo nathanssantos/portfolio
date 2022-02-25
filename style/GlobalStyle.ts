@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import theme from "./SCTheme";
-const { colors, fonts, transition } = theme;
+import SCTheme from "./SCTheme";
+const { colors, fonts, transition } = SCTheme;
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -260,6 +260,8 @@ const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: ${colors.slate};
   }
 
   *,
@@ -277,6 +279,19 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${fonts.inter};
     color: ${colors.slate};
     background-color: ${colors.black};
+    
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: none;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background-color: ${colors.slate};
+      border-radius: 3px;
+    }
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -291,7 +306,7 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
-    transition: ${theme.transition};
+    transition: ${SCTheme.transition};
     color: ${colors.green};
     display: inline-block;
   }
@@ -316,7 +331,7 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     border: 0;
     border-radius: 0;
-    transition: ${theme.transition};
+    transition: ${SCTheme.transition};
     &:focus,
     &:active {
       outline: 0;

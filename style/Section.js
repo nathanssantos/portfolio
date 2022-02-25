@@ -8,7 +8,7 @@ const Section = styled.section`
   padding-top: 4rem;
 
   .content {
-    padding: 6rem 0;
+    /* padding: 6rem 0; */
 
     ${media.bp900`
       padding: 0 6rem;
@@ -32,10 +32,14 @@ const Section = styled.section`
     h2 {
       font-family: ${fonts.mono};
       color: ${colors.green};
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       display: flex;
       align-items: center;
       white-space: nowrap;
+
+      ${media.bp900`
+        font-size: 1.5rem;
+      `};
 
       &:after {
         content: "";

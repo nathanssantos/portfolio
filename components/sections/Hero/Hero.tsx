@@ -14,12 +14,13 @@ const Hero = () => {
             <h1>Nathan Santos.</h1>
           </FadeInContainer>
           <FadeInContainer delay={700}>
-            <h2>I create things for the web.</h2>
+            <h2>I create digital experiences.</h2>
           </FadeInContainer>
           <FadeInContainer delay={800}>
             <h4>
-              I’m a Front-end engineer with 5 years of experience specialized in
-              building exceptional digital products. Currently, I’m Tech Lead at{" "}
+              I’m a Front-end engineer with 4 years of experience specializing
+              in building high-quality digital products. Currently, I’m Tech
+              Lead at{" "}
               <a
                 href="https://w16.dev/"
                 target="_blank"
