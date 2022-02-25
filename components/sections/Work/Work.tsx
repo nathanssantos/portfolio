@@ -8,30 +8,21 @@ import { IconButton } from "@mui/material";
 import { FadeInContainer } from "../../";
 import Styles from "./Styles";
 
-interface Repository {
-  id: Number;
-  name: String;
-  description?: String;
-  stargazers_count?: Number;
-  language: String;
-  license?: {
-    key: String;
-    name: String;
-    spdx_id: String;
-  };
-  html_url: String;
-}
-
 interface WorkProps {
-  repositories: Repository[];
+  repositories?: Repository[];
 }
 
 const Work = (props: WorkProps) => {
   const { repositories } = props;
 
+  if (!repositories) return null;
+
   const data = repositories.sort((a, b) => {
+    if (!a.stargazers_count || !b.stargazers_count) return 0;
+
     if (a.stargazers_count > b.stargazers_count) return -1;
     else if (a.stargazers_count < b.stargazers_count) return 1;
+
     return 0;
   });
 

@@ -2,25 +2,11 @@ import axios from "axios";
 import type { NextPage } from "next";
 import { About, Contact, Experience, Hero, Work } from "../components";
 
-interface Repository {
-  id: Number;
-  name: String;
-  description?: String;
-  stargazers_count?: Number;
-  language: String;
-  license?: {
-    key: String;
-    name: String;
-    spdx_id: String;
-  };
-  html_url: String;
-}
-
 interface HomeProps {
-  repositories: Repository[];
+  repositories?: Repository[];
 }
 
-const Home: NextPage = (props: HomeProps) => {
+const Home: NextPage<HomeProps> = (props) => {
   const { repositories } = props;
 
   return (

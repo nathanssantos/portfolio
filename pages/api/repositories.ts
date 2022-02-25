@@ -3,20 +3,6 @@ import type { NextApiRequest, NextApiResponse } from "next";
 
 const { GITHUB_USERNAME } = process.env;
 
-interface Repository {
-  id: Number;
-  name: string;
-  description?: String;
-  stargazers_count?: Number;
-  language: String;
-  license?: {
-    key: String;
-    name: String;
-    spdx_id: String;
-  };
-  html_url: String;
-}
-
 type MessageResponse = { message: String };
 
 type Data = Repository[] | MessageResponse;
@@ -45,10 +31,8 @@ export default async function handler(
       "clockify-teams",
       "podjs",
       "react-boilerplate",
-      "chat-microservice",
-      "jsonica",
       "react-native-boilerplate",
-      "space-hover",
+      "portfolio",
     ];
 
     const filteredRepositories = data.filter(({ name }: Repository) =>
