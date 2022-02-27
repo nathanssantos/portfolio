@@ -1,6 +1,6 @@
 import axios from "axios";
 import type { NextPage } from "next";
-import { About, Contact, Experience, Hero, Work } from "../components";
+import { About, Contact, Experience, Hero, Work } from "../sections";
 
 interface HomeProps {
   repositories?: Repository[];

@@ -1,5 +1,5 @@
 import Container from "@mui/material/Container";
-import { Button, FadeInContainer } from "../../";
+import { Button, FadeInContainer } from "../../components";
 import Styles from "./Styles";
 
 const Contact = () => {
