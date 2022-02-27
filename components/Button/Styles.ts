@@ -38,10 +38,7 @@ const Styles = styled(Button)`
 
   &:hover {
     .background-cover {
-      left: 0.188rem;
-      right: 0.188rem;
-      top: 0.188rem;
-      bottom: 0.188rem;
+      opacity: 0.9;
     }
   }
 `;

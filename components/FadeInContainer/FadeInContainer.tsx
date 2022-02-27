@@ -39,9 +39,9 @@ const FadeInContainer = (props: FadeInContainerProps) => {
     children,
     lazyLoad = false,
     height = 16,
-    delay = 200,
+    delay = 0,
     once = true,
-    offset = -150,
+    offset = -50,
   } = props;
 
   if (lazyLoad) {

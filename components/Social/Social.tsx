@@ -1,52 +1,50 @@
 import IconButton from "@mui/material/IconButton";
+import Link from "@mui/material/Link";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { FadeInContainer } from "..";
 import Styles from "./Styles";
-import SCTheme from "../../style/SCTheme";
+import { Button } from "@mui/material";
 
 const Social = () => {
   return (
     <Styles className="social">
       <div className="content">
         <div className="left">
-          <FadeInContainer delay={900}>
-            <a
+          <FadeInContainer delay={1550}>
+            <IconButton
+              component="a"
               href="https://github.com/nathanssantos/"
               target="_blank"
               rel="noreferrer"
             >
-              <IconButton>
-                <GitHubIcon />
-              </IconButton>
-            </a>
+              <GitHubIcon />
+            </IconButton>
           </FadeInContainer>
-          <FadeInContainer delay={1000}>
-            <a
+          <FadeInContainer delay={1700}>
+            <IconButton
+              component="a"
               href="https://www.instagram.com/nathanssantosdev/"
               target="_blank"
               rel="noreferrer"
             >
-              <IconButton>
-                <InstagramIcon />
-              </IconButton>
-            </a>
+              <InstagramIcon />
+            </IconButton>
           </FadeInContainer>
-          <FadeInContainer delay={1100}>
-            <a
+          <FadeInContainer delay={1850}>
+            <IconButton
+              component="a"
               href="https://www.linkedin.com/in/nathan-s-santos-4b2637163/"
               target="_blank"
               rel="noreferrer"
             >
-              <IconButton>
-                <LinkedInIcon />
-              </IconButton>
-            </a>
+              <LinkedInIcon />
+            </IconButton>
           </FadeInContainer>
         </div>
         <div className="right">
-          <FadeInContainer delay={900}>
+          <FadeInContainer delay={2000}>
             <div className="email">
               <a
                 href="mailto:nathansilvasantos@gmail.com"

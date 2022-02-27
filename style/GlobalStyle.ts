@@ -289,7 +289,7 @@ const GlobalStyle = createGlobalStyle`
     }
     
     &::-webkit-scrollbar-thumb {
-      background-color: ${colors.slate};
+      background-color: ${colors.green};
       border-radius: 3px;
     }
   }
@@ -307,7 +307,7 @@ const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
     transition: ${SCTheme.transition};
-    color: ${colors.green};
+    color: currentColor;
     display: inline-block;
   }
 
@@ -374,11 +374,6 @@ const GlobalStyle = createGlobalStyle`
         width: 100%;
       }
     } 
-  }
-
-  .MuiBackdrop-root {
-    background-color: rgba(26, 30, 34, 0.85);
-    backdrop-filter: blur(0.313rem);
   }
 `;
 

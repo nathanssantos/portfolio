@@ -10,12 +10,12 @@ const About = () => {
       <Container maxWidth="lg">
         <div className="content">
           <header>
-            <FadeInContainer lazyLoad delay={100}>
+            <FadeInContainer lazyLoad>
               <h2>About</h2>
             </FadeInContainer>
           </header>
           <div className="about__body">
-            <FadeInContainer lazyLoad delay={200}>
+            <FadeInContainer lazyLoad delay={150}>
               <div className="about__image">
                 <Image
                   src={me}
@@ -28,12 +28,11 @@ const About = () => {
             </FadeInContainer>
             <FadeInContainer lazyLoad delay={300}>
               <p>
-                Passionate about learning, applying new technologies, constantly
-                challenging myself and improving my skills. As a developer, I
-                aim to write clean code which can be easily read, tested,
-                maintained, reused, and extended. I am highly committed to my
-                work, always doing my best to push initiatives to successful
-                completion.
+                Passionate about learning, applying new technologies, and
+                constantly improving my skills. As a developer, I aim to write
+                clean code which can be easily read, tested, maintained, reused,
+                and extended. I am highly committed to my work, always doing my
+                best to push initiatives to successful completion.
               </p>
             </FadeInContainer>
           </div>
