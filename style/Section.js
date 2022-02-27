@@ -4,7 +4,7 @@ import { SCTheme } from ".";
 const { colors, fonts } = SCTheme;
 
 const Section = styled.section`
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   padding-top: 4rem;
 
   .content {

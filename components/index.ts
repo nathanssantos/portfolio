@@ -1,5 +1,6 @@
 import Button from "./Button/Button";
 import Drawer from "./Drawer/Drawer";
+import ExperienceListItem from "./ExperienceListItem/ExperienceListItem";
 import FadeInContainer from "./FadeInContainer/FadeInContainer";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
@@ -13,6 +14,7 @@ import ThemeProvider from "./ThemeProvider/ThemeProvider";
 export {
   Drawer,
   FadeInContainer,
+  ExperienceListItem,
   Button,
   Footer,
   Header,

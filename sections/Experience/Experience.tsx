@@ -1,45 +1,129 @@
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import { FadeInContainer } from "../../components";
+import Image from "next/image";
+
+import { FadeInContainer, ExperienceListItem } from "../../components";
 import Styles from "./Styles";
 
 const Experience = () => {
   return (
-    <Styles id="experience">
+    <Styles id="experience" className="experience">
       <Container maxWidth="lg">
         <div className="content">
           <header>
             <FadeInContainer lazyLoad>
-              <h2>Experience</h2>
+              <h2>Some of My Last Jobs</h2>
             </FadeInContainer>
           </header>
-          <FadeInContainer lazyLoad>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi
-              corrupti et tempore eaque harum excepturi, enim sunt id delectus.
-              Velit quis libero rem ducimus eligendi soluta dolore natus ullam a
-              perferendis consectetur earum fugiat reprehenderit necessitatibus
-              modi distinctio quasi cum, dignissimos dolor dolorum. Eum
-              perspiciatis amet tempora expedita suscipit unde rem, nobis
-              obcaecati recusandae, doloremque vel cum. Et, nemo. Ducimus
-              architecto eos in facilis placeat est, deserunt veniam sunt,
-              laudantium itaque quo, excepturi totam earum culpa officiis sit?
-              Eaque, quia soluta minima placeat odit repellendus reiciendis,
-              porro cumque repudiandae, temporibus omnis. Qui exercitationem
-              sit, magnam perferendis, autem, officia molestias repellendus sint
-              cumque dolore animi ea vel obcaecati nulla corrupti quod. In
-              itaque facilis, placeat cumque eius ullam consequuntur iste quasi
-              provident, optio sequi! Qui delectus voluptatibus veniam tempora
-              soluta fugit accusantium illum ratione tenetur consequatur saepe
-              molestias omnis, recusandae ipsam sequi itaque modi. Incidunt, ut
-              quibusdam eveniet beatae totam laboriosam tenetur laudantium
-              voluptate porro voluptatum unde atque quidem! Dolor reprehenderit
-              enim esse tempora, est placeat exercitationem harum quibusdam
-              quisquam consequatur rerum magnam ipsum quas alias magni illo rem
-              corporis fuga animi facere dolorem, velit dolores? Dolores ex
-              delectus totam quaerat dolor nemo saepe, facilis tempora excepturi
-              non atque sed!
-            </p>
-          </FadeInContainer>
+          <List>
+            <FadeInContainer lazyLoad delay={150}>
+              <ExperienceListItem
+                name="Rokkos"
+                image="/assets/images/rokkos.png"
+                url="https://web.rokkos.app"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nobis
+            excepturi deleniti, blanditiis ullam ratione cupiditate consequuntur
+            eligendi esse fuga unde soluta doloremque obcaecati quia facere
+            error dignissimos! Dolorum, fugiat?"
+                stack="React.js | Material UI"
+                width={110}
+                height={59}
+              />
+            </FadeInContainer>
+
+            <FadeInContainer lazyLoad delay={150}>
+              <ExperienceListItem
+                name="Let's Hike"
+                image="/assets/images/lets-hike.webp"
+                url="https://play.google.com/store/apps/details?id=br.com.floripahike.app&hl=pt_BR&gl=US"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nobis
+            excepturi deleniti, blanditiis ullam ratione cupiditate consequuntur
+            eligendi esse fuga unde soluta doloremque obcaecati quia facere
+            error dignissimos! Dolorum, fugiat?"
+                stack="React Native | Native Base"
+                width={110}
+                height={110}
+              />
+            </FadeInContainer>
+
+            <FadeInContainer lazyLoad delay={150}>
+              <ExperienceListItem
+                name="Unne"
+                image="/assets/images/unne.png"
+                url="https://app.unnegestao.com.br"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nobis
+            excepturi deleniti, blanditiis ullam ratione cupiditate consequuntur
+            eligendi esse fuga unde soluta doloremque obcaecati quia facere
+            error dignissimos! Dolorum, fugiat?"
+                stack="Vue.js | Quasar Framework"
+                width={110}
+                height={40}
+              />
+            </FadeInContainer>
+
+            <FadeInContainer lazyLoad delay={150}>
+              <ExperienceListItem
+                name="Turno Inverso"
+                image="/assets/images/turno-inverso.png"
+                url="https://play.google.com/store/apps/details?id=br.com.turnoinverso.aluno"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nobis
+            excepturi deleniti, blanditiis ullam ratione cupiditate consequuntur
+            eligendi esse fuga unde soluta doloremque obcaecati quia facere
+            error dignissimos! Dolorum, fugiat?"
+                stack="React Native | Native Base"
+                width={110}
+                height={110}
+              />
+            </FadeInContainer>
+
+            <FadeInContainer lazyLoad delay={150}>
+              <ExperienceListItem
+                name="We Play"
+                image="/assets/images/we-play.png"
+                url="https://play.google.com/store/apps/details?id=br.com.w16.letsplayapp"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nobis
+            excepturi deleniti, blanditiis ullam ratione cupiditate consequuntur
+            eligendi esse fuga unde soluta doloremque obcaecati quia facere
+            error dignissimos! Dolorum, fugiat?"
+                stack="React Native | Native Base"
+                width={110}
+                height={110}
+              />
+            </FadeInContainer>
+
+            <FadeInContainer lazyLoad delay={150}>
+              <ExperienceListItem
+                name="Previcel"
+                image="/assets/images/previcel.webp"
+                url="https://play.google.com/store/apps/details?id=br.com.dataa.previcel.app"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nobis
+            excepturi deleniti, blanditiis ullam ratione cupiditate consequuntur
+            eligendi esse fuga unde soluta doloremque obcaecati quia facere
+            error dignissimos! Dolorum, fugiat?"
+                stack="React Native | Native Base"
+                width={110}
+                height={110}
+              />
+            </FadeInContainer>
+
+            <FadeInContainer lazyLoad delay={150}>
+              <ExperienceListItem
+                name="Plastubos"
+                image="/assets/images/plastubos.png"
+                url="https://play.google.com/store/apps/details?id=br.com.dataa.previcel.app"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nobis
+            excepturi deleniti, blanditiis ullam ratione cupiditate consequuntur
+            eligendi esse fuga unde soluta doloremque obcaecati quia facere
+            error dignissimos! Dolorum, fugiat?"
+                stack="Wordpress"
+                width={110}
+                height={110}
+              />
+            </FadeInContainer>
+          </List>
         </div>
       </Container>
     </Styles>
