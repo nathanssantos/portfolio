@@ -7,6 +7,11 @@ const Styles = styled(Card)`
   flex: 1;
   display: flex;
   flex-direction: column;
+  transition: ${transition};
+
+  &:hover {
+    transform: translate3d(0, -0.4rem, 0);
+  }
 
   .MuiCardContent-root {
     flex: 1;
@@ -26,10 +31,6 @@ const Styles = styled(Card)`
     flex-direction: column;
     transition: ${transition};
 
-    &:hover {
-      transform: translate3d(0, -0.4rem, 0);
-    }
-
     &__header {
       display: flex;
       justify-content: space-between;
@@ -48,10 +49,12 @@ const Styles = styled(Card)`
       align-items: center;
       margin-left: 0.5rem;
       margin-top: 0.125rem;
+      transition: ${transition};
 
       .MuiTypography-root {
         line-height: 1;
         margin-left: 0.25rem;
+        transition: ${transition};
       }
     }
 
@@ -61,6 +64,10 @@ const Styles = styled(Card)`
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .MuiTypography-root {
+          transition: ${transition};
+        }
       }
     }
   }

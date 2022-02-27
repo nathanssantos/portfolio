@@ -7,7 +7,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     <div className="app">
       <Head>
         <title>Nathan S. Santos</title>
-        <meta name="description" content="My personal projects portfolio." />
+        <meta name="description" content="My frontend portfolio." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ThemeProvider>
