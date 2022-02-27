@@ -14,7 +14,7 @@ const Home: NextPage<HomeProps> = (props) => {
       <Hero />
       <About />
       <Experience />
-      <Projects repositories={repositories} />
+      {repositories?.length && <Projects repositories={repositories} />}
       <Contact />
     </div>
   );
