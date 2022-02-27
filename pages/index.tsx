@@ -22,13 +22,17 @@ const Home: NextPage<HomeProps> = (props) => {
 
 export async function getServerSideProps() {
   try {
-    const response = await axios.get("http://localhost:3000/api/repositories");
+    const response = await axios.get(
+      "https://portfolio-nathanssantos.vercel.app/api/repositories"
+    );
 
     return {
       props: { repositories: response.data },
     };
   } catch (error) {
-    return null;
+    return {
+      props: { repositories: [] },
+    };
   }
 }
 
