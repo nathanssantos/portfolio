@@ -12,13 +12,13 @@ const ThemeProvider = (props: ThemeProviderProps) => {
   const { children } = props;
 
   return (
-    <SCThemeProvider theme={SCTheme}>
-      <MuiThemeProvider theme={MUITheme}>
+    <MuiThemeProvider theme={MUITheme}>
+      <SCThemeProvider theme={SCTheme}>
         <CssBaseline />
         <GlobalStyle />
         {children}
-      </MuiThemeProvider>
-    </SCThemeProvider>
+      </SCThemeProvider>
+    </MuiThemeProvider>
   );
 };
 
