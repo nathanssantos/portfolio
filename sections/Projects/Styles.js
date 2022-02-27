@@ -74,6 +74,7 @@ const Styles = styled(Section)`
       display: flex;
       justify-content: space-between;
       margin-bottom: 0.5rem;
+      align-items: flex-start;
     }
 
     &__title {
@@ -86,6 +87,7 @@ const Styles = styled(Section)`
       display: flex;
       align-items: center;
       margin-left: 0.5rem;
+      margin-top: 0.125rem;
 
       .MuiTypography-root {
         line-height: 1;
