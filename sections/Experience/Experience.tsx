@@ -21,6 +21,21 @@ const Experience = () => {
           <List>
             <FadeInContainer lazyLoad>
               <ExperienceListItem
+                name="Engie TAG"
+                image="/assets/images/tag.png"
+                url="https://ntag.com.br"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nobis
+            excepturi deleniti, blanditiis ullam ratione cupiditate consequuntur
+            eligendi esse fuga unde soluta doloremque obcaecati quia facere
+            error dignissimos! Dolorum, fugiat?"
+                stack="Wordpress"
+                width={110}
+                height={29}
+              />
+            </FadeInContainer>
+
+            <FadeInContainer lazyLoad>
+              <ExperienceListItem
                 name="Rokkos"
                 image="/assets/images/rokkos.png"
                 url="https://web.rokkos.app"
@@ -113,7 +128,7 @@ const Experience = () => {
               <ExperienceListItem
                 name="Plastubos"
                 image="/assets/images/plastubos.png"
-                url="https://play.google.com/store/apps/details?id=br.com.dataa.previcel.app"
+                url="http://plastubos.com.br"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nobis
             excepturi deleniti, blanditiis ullam ratione cupiditate consequuntur
             eligendi esse fuga unde soluta doloremque obcaecati quia facere
