@@ -1,5 +1,5 @@
 import Container from "@mui/material/Container";
-import { FadeInContainer } from "../../";
+import { FadeInContainer } from "../../components";
 import Styles from "./Styles";
 
 const Hero = () => {

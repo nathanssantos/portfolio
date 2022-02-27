@@ -1,8 +1,8 @@
 import Container from "@mui/material/Container";
 import Image from "next/image";
-import { FadeInContainer } from "../../";
+import { FadeInContainer } from "../../components";
 import Styles from "./Styles";
-import me from "../../../public/assets/me.jpg";
+import me from "../../public/assets/me.jpg";
 
 const About = () => {
   return (

@@ -23,11 +23,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "style/Section.js",
-    "components/Social/Styles.js",
-    "components/Header/Styles.js",
-    "style/media.js",
-    "components/sections/Work/Styles.js"
+    "**/*.js",
+    "**/*.jsx",
   ],
   "exclude": [
     "node_modules"

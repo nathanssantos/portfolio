@@ -1,4 +1,4 @@
-import { About, Contact, Experience, Hero, Work } from "../../components";
+import { About, Contact, Experience, Hero, Work } from "../../sections";
 
 const Home = () => {
   return (

@@ -5,7 +5,7 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { IconButton } from "@mui/material";
-import { FadeInContainer } from "../../";
+import { FadeInContainer } from "../../components";
 import Styles from "./Styles";
 
 interface WorkProps {

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Section } from "../../../style";
-import SCtheme from "../../../style/SCTheme";
+import { Section, media } from "../../style";
+import SCtheme from "../../style/SCTheme";
 const { colors } = SCtheme;
 
 const Styles = styled(Section)`
@@ -8,6 +8,12 @@ const Styles = styled(Section)`
     &__body {
       display: flex;
       align-items: center;
+      flex-direction: column;
+      /* text-align: center; */
+
+      ${media.bp600`
+        flex-direction: row;
+      `};
     }
 
     &__image {
@@ -15,13 +21,18 @@ const Styles = styled(Section)`
       min-width: 200px;
       height: 200px;
       width: 200px;
-      margin-right: 32px;
       border-radius: 50%;
       transition: all 200ms ease-in-out;
       display: flex;
       width: 100%;
       height: 100%;
       filter: grayscale(100%) contrast(1.25);
+      margin-bottom: 1rem;
+
+      ${media.bp600`
+        margin-right: 2rem;
+        margin-bottom: 0;
+      `};
 
       img {
         border-radius: 50%;
