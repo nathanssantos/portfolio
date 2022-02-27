@@ -3,19 +3,25 @@ import { SCTheme, Section } from "../../style";
 const { colors, fonts } = SCTheme;
 
 const Styles = styled(Section)`
-  padding: 6.25rem 0 0;
-  min-height: 100vh;
+  padding: 3rem 0 10rem;
+  min-height: calc(100vh - 4rem);
   margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .content {
     display: flex;
     flex-direction: column;
-    padding-top: 6rem;
 
-    h1 {
-      font-size: clamp(2.2rem, 5vw, 5rem);
+    h1,
+    h2 {
+      font-size: clamp(2rem, 5vw, 5rem);
       font-weight: 800;
       line-height: 1;
+    }
+
+    h1 {
       background: linear-gradient(
         94.23deg,
         ${colors.green} 12.41%,
@@ -28,9 +34,6 @@ const Styles = styled(Section)`
     }
 
     h2 {
-      font-size: clamp(2.2rem, 5vw, 5rem);
-      font-weight: 700;
-      line-height: 1;
       margin-bottom: 1.875rem;
     }
 

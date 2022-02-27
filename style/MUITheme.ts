@@ -19,8 +19,7 @@ const MUITheme = createTheme({
     MuiAppBar: {
       styleOverrides: {
         root: {
-          backgroundColor: "rgba(26, 30, 34, 0.85)",
-          marginTop: "3.125rem",
+          backgroundColor: "rgba(26, 30, 34, 0.75)",
           backdropFilter: "blur(0.313rem)",
           backgroundImage: "none",
           boxShadow: "none",
@@ -39,6 +38,14 @@ const MUITheme = createTheme({
       styleOverrides: {
         root: {
           textTransform: "initial",
+        },
+      },
+    },
+    MuiBackdrop: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "rgba(26, 30, 34, 0.5)",
+          backdropFilter: "blur(0.313rem)",
         },
       },
     },

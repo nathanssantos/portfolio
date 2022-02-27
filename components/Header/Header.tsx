@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import Container from "@mui/material/Container";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Styles from "./Styles";
-import { Drawer, Logo, Menu } from "../";
+import { Drawer, Logo, Menu, FadeInContainer } from "../";
+import Button from "../Button/Button";
 
 const Header = () => {
   const [headerShown, setHeaderShown] = useState(true);
@@ -34,24 +34,26 @@ const Header = () => {
       className="header"
       position="sticky"
       style={{
-        transform: headerShown
-          ? "none"
-          : "translate3d(0, calc(-100% - 3.125rem),0)",
+        transform: headerShown ? "none" : "translate3d(0, -100%,0)",
         transition: "transform 0.25s cubic-bezier(0.645,0.045,0.355,1)",
       }}
     >
       <Toolbar>
         <Styles>
-          <div className="logo">
-            <a href="#">
-              <Logo />
-            </a>
-          </div>
-          <div className="menu">
+          <FadeInContainer delay={200}>
+            <div className="header__logo">
+              {/* <a href="#">
+                <Logo />
+              </a> */}
+            </div>
+          </FadeInContainer>
+          <div className="header__menu">
             <Menu />
           </div>
-          <div className="drawer">
-            <Drawer />
+          <div className="header__drawer">
+            <FadeInContainer delay={400}>
+              <Drawer />
+            </FadeInContainer>
           </div>
         </Styles>
       </Toolbar>

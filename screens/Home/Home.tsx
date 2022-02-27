@@ -1,4 +1,4 @@
-import { About, Contact, Experience, Hero, Work } from "../../sections";
+import { About, Contact, Experience, Hero, Projects } from "../../sections";
 
 const Home = () => {
   return (
@@ -6,7 +6,7 @@ const Home = () => {
       <Hero />
       <About />
       <Experience />
-      <Work />
+      <Projects />
       <Contact />
     </div>
   );

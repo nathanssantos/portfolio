@@ -9,5 +9,6 @@ interface Repository {
     name: string;
     spdx_id: string;
   };
+  homepage: string;
   html_url: string;
 }

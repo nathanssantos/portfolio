@@ -1,6 +1,6 @@
-import Link from "next/link";
-import Button from "@mui/material/Button";
+import MUIButton from "@mui/material/Button";
 import FadeInContainer from "../FadeInContainer/FadeInContainer";
+import { Button } from "../";
 import Styles from "./Styles";
 
 const Menu = () => {
@@ -8,31 +8,36 @@ const Menu = () => {
     <Styles className="menu">
       <ul>
         <li>
-          <FadeInContainer delay={100}>
-            <Link href="/#about" passHref>
-              <Button color="primary">About</Button>
-            </Link>
+          <FadeInContainer delay={350}>
+            <MUIButton color="primary" component="a" href="/#about">
+              About
+            </MUIButton>
           </FadeInContainer>
         </li>
         <li>
-          <FadeInContainer delay={200}>
-            <Link href="/#experience" passHref>
-              <Button>Experience</Button>
-            </Link>
+          <FadeInContainer delay={500}>
+            <MUIButton component="a" href="/#experience">
+              Experience
+            </MUIButton>
           </FadeInContainer>
         </li>
         <li>
-          <FadeInContainer delay={300}>
-            <Link href="/#work" passHref>
-              <Button>Work</Button>
-            </Link>
+          <FadeInContainer delay={650}>
+            <MUIButton component="a" href="/#projects">
+              Projects
+            </MUIButton>
           </FadeInContainer>
         </li>
         <li>
-          <FadeInContainer delay={400}>
-            <Link href="/#contact" passHref>
-              <Button>Contact</Button>
-            </Link>
+          <FadeInContainer delay={800}>
+            <MUIButton component="a" href="/#contact">
+              Contact
+            </MUIButton>
+          </FadeInContainer>
+        </li>
+        <li>
+          <FadeInContainer delay={950}>
+            <Button size="medium">Resume</Button>
           </FadeInContainer>
         </li>
       </ul>

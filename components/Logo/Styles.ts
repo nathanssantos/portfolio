@@ -13,8 +13,8 @@ const Styles = styled.div`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
   color: ${colors.green};
-  font-weight: 800;
-  font-size: 1.875rem;
+  font-weight: 100;
+  font-size: 1.5rem;
 `;
 
 export default Styles;

@@ -18,16 +18,21 @@ const Styles = styled.div`
     `};
   }
 
-  .menu {
-    display: none;
-    @media (min-width: 56.25rem) {
-      display: flex;
-    }
-  }
-
-  .drawer {
-    @media (min-width: 56.25rem) {
+  .header {
+    &__menu {
       display: none;
+
+      ${media.bp900`
+        display: flex;
+        align-items: center;
+        gap: 1rem
+      `};
+    }
+
+    &__drawer {
+      ${media.bp900`
+        display: none;
+      `};
     }
   }
 `;
