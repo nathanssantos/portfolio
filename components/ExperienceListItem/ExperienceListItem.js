@@ -4,17 +4,17 @@ import Image from "next/image";
 
 import Styles from "./Styles";
 
-interface ExpereinceListItemProps {
-  name: string;
-  image: string;
-  description: string;
-  url: string;
-  width: number;
-  height: number;
-  stack: string;
-}
+// interface ExpereinceListItemProps {
+//   name: string;
+//   image: string;
+//   description: string;
+//   url: string;
+//   width: number;
+//   height: number;
+//   stack: string;
+// }
 
-const ExpereinceListItem = (props: ExpereinceListItemProps) => {
+const ExpereinceListItem = (props /* : ExpereinceListItemProps */) => {
   const { name, image, description, url, width, height, stack } = props;
 
   return (

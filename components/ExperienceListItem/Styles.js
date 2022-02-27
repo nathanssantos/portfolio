@@ -1,8 +1,8 @@
-import ListItemButton from "@mui/material/ListItemButton";
+import ListItem from "@mui/material/ListItem";
 import styled from "styled-components";
 import { media } from "../../style";
 
-const Styles = styled(ListItemButton)`
+const Styles = styled(ListItem)`
   padding: 1rem;
   text-align: center;
 
