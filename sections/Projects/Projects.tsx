@@ -43,7 +43,7 @@ const Projects = (props: ProjectsProps) => {
                 },
                 index
               ) => (
-                <FadeInContainer lazyLoad key={`${id}`} delay={index * 100}>
+                <FadeInContainer lazyLoad key={`${id}`}>
                   <ProjectCard
                     id={id}
                     name={name}
@@ -57,9 +57,9 @@ const Projects = (props: ProjectsProps) => {
               )
             )}
           </div>
-          <FadeInContainer lazyLoad delay={600}>
+          <FadeInContainer lazyLoad>
             <Button href="https://github.com/nathanssantos?tab=repositories">
-              See All Projects
+              See More
             </Button>
           </FadeInContainer>
         </div>

@@ -19,7 +19,7 @@ const Experience = () => {
             </FadeInContainer>
           </header>
           <List>
-            <FadeInContainer lazyLoad delay={150}>
+            <FadeInContainer lazyLoad>
               <ExperienceListItem
                 name="Rokkos"
                 image="/assets/images/rokkos.png"
@@ -34,7 +34,7 @@ const Experience = () => {
               />
             </FadeInContainer>
 
-            <FadeInContainer lazyLoad delay={150}>
+            <FadeInContainer lazyLoad>
               <ExperienceListItem
                 name="Let's Hike"
                 image="/assets/images/lets-hike.webp"
@@ -49,7 +49,7 @@ const Experience = () => {
               />
             </FadeInContainer>
 
-            <FadeInContainer lazyLoad delay={150}>
+            <FadeInContainer lazyLoad>
               <ExperienceListItem
                 name="Unne"
                 image="/assets/images/unne.png"
@@ -64,7 +64,7 @@ const Experience = () => {
               />
             </FadeInContainer>
 
-            <FadeInContainer lazyLoad delay={150}>
+            <FadeInContainer lazyLoad>
               <ExperienceListItem
                 name="Turno Inverso"
                 image="/assets/images/turno-inverso.png"
@@ -79,7 +79,7 @@ const Experience = () => {
               />
             </FadeInContainer>
 
-            <FadeInContainer lazyLoad delay={150}>
+            <FadeInContainer lazyLoad>
               <ExperienceListItem
                 name="We Play"
                 image="/assets/images/we-play.png"
@@ -94,7 +94,7 @@ const Experience = () => {
               />
             </FadeInContainer>
 
-            <FadeInContainer lazyLoad delay={150}>
+            <FadeInContainer lazyLoad>
               <ExperienceListItem
                 name="Previcel"
                 image="/assets/images/previcel.webp"
@@ -109,7 +109,7 @@ const Experience = () => {
               />
             </FadeInContainer>
 
-            <FadeInContainer lazyLoad delay={150}>
+            <FadeInContainer lazyLoad>
               <ExperienceListItem
                 name="Plastubos"
                 image="/assets/images/plastubos.png"

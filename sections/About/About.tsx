@@ -14,7 +14,7 @@ const About = () => {
             </FadeInContainer>
           </header>
           <div className="about__body">
-            <FadeInContainer lazyLoad delay={150}>
+            <FadeInContainer lazyLoad>
               <div className="about__image">
                 <Image
                   src="/assets/images/me.jpg"
@@ -25,7 +25,7 @@ const About = () => {
                 <div className="about__image__mask" />
               </div>
             </FadeInContainer>
-            <FadeInContainer lazyLoad delay={300}>
+            <FadeInContainer lazyLoad>
               <p>
                 Passionate about learning, applying new technologies, and
                 constantly improving my skills. As a developer, I aim to write
