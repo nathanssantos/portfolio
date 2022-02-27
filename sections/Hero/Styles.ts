@@ -16,7 +16,7 @@ const Styles = styled(Section)`
 
     h1,
     h2 {
-      font-size: clamp(2rem, 5vw, 5rem);
+      font-size: clamp(2rem, 5vw, 4rem);
       font-weight: 800;
       line-height: 1;
     }
