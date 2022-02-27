@@ -21,6 +21,7 @@ const Styles = styled(Section)`
       min-width: 200px;
       height: 200px;
       width: 200px;
+      max-width: 200px;
       border-radius: 50%;
       transition: all 200ms ease-in-out;
       display: flex;

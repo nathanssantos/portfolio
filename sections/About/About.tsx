@@ -2,7 +2,6 @@ import Container from "@mui/material/Container";
 import Image from "next/image";
 import { FadeInContainer } from "../../components";
 import Styles from "./Styles";
-import me from "../../public/assets/me.jpg";
 
 const About = () => {
   return (
@@ -18,7 +17,7 @@ const About = () => {
             <FadeInContainer lazyLoad delay={150}>
               <div className="about__image">
                 <Image
-                  src={me}
+                  src="/assets/images/me.jpg"
                   alt="Nathan S. Santos"
                   width={200}
                   height={200}
