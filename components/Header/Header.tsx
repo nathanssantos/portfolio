@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Styles from "./Styles";
-import { Drawer, Logo, Menu, FadeInContainer } from "../";
-import Button from "../Button/Button";
+import { Drawer, Menu, FadeInContainer } from "../";
 
 const Header = () => {
   const [headerShown, setHeaderShown] = useState(true);
@@ -41,11 +40,7 @@ const Header = () => {
       <Toolbar>
         <Styles>
           <FadeInContainer delay={200}>
-            <div className="header__logo">
-              {/* <a href="#">
-                <Logo />
-              </a> */}
-            </div>
+            <div className="header__logo"></div>
           </FadeInContainer>
           <div className="header__menu">
             <Menu />

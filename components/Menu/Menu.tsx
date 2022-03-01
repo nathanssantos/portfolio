@@ -37,7 +37,13 @@ const Menu = () => {
         </li>
         <li>
           <FadeInContainer delay={950}>
-            <Button size="medium">Resume</Button>
+            <Button
+              size="medium"
+              href="/assets/Resume-Nathan_Silva_Santos.pdf"
+              target="_blank"
+            >
+              Resume
+            </Button>
           </FadeInContainer>
         </li>
       </ul>
