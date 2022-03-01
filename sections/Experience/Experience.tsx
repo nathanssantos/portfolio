@@ -34,7 +34,7 @@ const Experience = () => {
                 image="/assets/images/tag.png"
                 url="https://ntag.com.br"
                 description="Transportadora Associada de Gás S.A. (TAG) operates in the natural gas transportation segment through gas pipelines. TAG owns and manages a significant portion of Brazil's natural gas transport assets, distributed among the North, Northeast and Southeast regions."
-                work="I developed the front-end of the website taking into account the best SEO practices."
+                work="I developed the front-end of the institutional website taking into account the best SEO practices."
                 stack="WordPress"
                 width={110}
                 height={29}
@@ -99,7 +99,7 @@ const Experience = () => {
                 image="/assets/images/plastubos.png"
                 url="http://plastubos.com.br"
                 description="Manufacturer of pipes and hydraulic connections present in the Brazilian market for over 20 years."
-                work="I was part of the team that built the application developing much of the front-end."
+                work="I was part of the team that built the institutional website developing much of the front-end."
                 stack="WordPress"
                 width={110}
                 height={110}
