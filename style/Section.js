@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { media } from ".";
-import { SCTheme } from ".";
+import { SCTheme, media } from ".";
 const { colors, fonts } = SCTheme;
 
 const Section = styled.section`
@@ -8,8 +7,6 @@ const Section = styled.section`
   padding-top: 4rem;
 
   .content {
-    /* padding: 6rem 0; */
-
     ${media.bp900`
       padding: 0 6rem;
     `};
@@ -27,6 +24,7 @@ const Section = styled.section`
     .fade-in-container-wrapper,
     .transition-container {
       width: 100%;
+      /* display: flex; */
     }
 
     h2 {

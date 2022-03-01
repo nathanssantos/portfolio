@@ -1,13 +1,11 @@
 import styled from "styled-components";
 import { Section } from "../../style";
+import { SCTheme, media } from "../../style";
 
 const Styles = styled(Section)`
-  .fade-in-container-wrapper {
-    margin-bottom: 2rem;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
+  .MuiList-root {
+    display: grid;
+    gap: 1rem;
   }
 `;
 
