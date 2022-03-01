@@ -9,6 +9,7 @@ const Styles = styled(Box)`
   .menu {
     ul {
       flex-direction: column;
+      align-items: center;
 
       .MuiButton-root {
         width: 100%;

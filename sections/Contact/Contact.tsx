@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Container from "@mui/material/Container";
 import { Button, FadeInContainer } from "../../components";
 import Styles from "./Styles";
@@ -14,8 +15,8 @@ const Contact = () => {
           </header>
           <FadeInContainer lazyLoad offset={-50}>
             <p>
-              Feel free to contact me, my inbox is always open. Whether you have
-              a question or just want to say hi, I’ll do my best to answer you!
+              Feel free to contact me, my inbox is always open. I'll get to back
+              to you as soon as possible. That's a promise!
             </p>
           </FadeInContainer>
           <FadeInContainer lazyLoad offset={-50}>

@@ -9,10 +9,6 @@ const Styles = styled(Card)`
   flex-direction: column;
   transition: ${transition};
 
-  &:hover {
-    transform: translate3d(0, -0.4rem, 0);
-  }
-
   .MuiCardContent-root {
     flex: 1;
   }
@@ -73,6 +69,8 @@ const Styles = styled(Card)`
   }
 
   &:hover {
+    transform: translate3d(0, -0.4rem, 0);
+
     .project-card {
       &__title,
       &__stargazers,

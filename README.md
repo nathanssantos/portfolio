@@ -4,5 +4,7 @@ Thanks to [Brittany Chiang](https://github.com/bchiang7) for the excellent websi
 
 ## To do
 
-- Improve experience cards
-- Solve the style components loading delay problem on mount app
+- Solve the styled-components loading delay problem on mount app
+- Improve SEO and acessibility
+- App loader
+- Improve experience and project cards
