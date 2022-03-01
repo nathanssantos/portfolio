@@ -20,7 +20,7 @@ const Experience = () => {
                 name="Rokkos"
                 image="/assets/images/rokkos.png"
                 url="https://web.rokkos.app"
-                description="Marketplace for photographers where they show, sell and deliver their photos during the event they're working. The platform uses facial recognition to help customers find photos in which they are present."
+                description="Marketplace for photographers where they show, sell and deliver their photos during the event they're working. The platform also uses facial recognition to help customers find photos in which they are present."
                 work="I led the team that developed the application, built the entire front-end and helped the designers to create several interactions to improve usability and user's experience."
                 stack="React.js | Material UI"
                 width={110}
