@@ -22,7 +22,7 @@ const Experience = () => {
                 url="https://web.rokkos.app"
                 description="Marketplace for photographers where they show, sell and deliver their photos during the event they're working. The platform also uses facial recognition to help customers find photos in which they are present."
                 work="I led the team that created Rokkos from scratch, built the entire front-end and helped the designers to create several features to improve usability and user's experience."
-                stack="React.js | MobX | Material UI | Sass"
+                stack="React.js | MobX | Material UI | SASS"
                 width={110}
                 height={59}
               />
@@ -35,7 +35,7 @@ const Experience = () => {
                 url="https://ntag.com.br"
                 description="Transportadora Associada de Gás S.A. (TAG) operates in the natural gas transportation segment through gas pipelines. TAG owns and manages a significant portion of Brazil's natural gas transport assets, distributed among the North, Northeast and Southeast regions."
                 work="I developed the front-end of TAG's institutional website taking into account the best SEO practices and following Engie's styleguide."
-                stack="WordPress | Sass"
+                stack="WordPress | SASS"
                 width={110}
                 height={29}
               />
@@ -61,7 +61,7 @@ const Experience = () => {
                 url="https://app.unnegestao.com.br"
                 description="Platform used for analysis and management of growth strategies for small and medium businesses."
                 work="I developed the front-end of Unne's progressive web app and helped the team to identify several improvements that should be applied throughout this process."
-                stack="Vue.js | Quasar Framework | Sass"
+                stack="Vue.js | Quasar Framework | SASS"
                 width={110}
                 height={40}
               />
@@ -100,7 +100,7 @@ const Experience = () => {
                 url="http://plastubos.com.br"
                 description="Manufacturer of pipes and hydraulic connections present in the Brazilian market for over 20 years."
                 work="I was part of the team that built the company institutional website developing much of the front-end."
-                stack="WordPress | Bootstrap | Sass"
+                stack="WordPress | Bootstrap | SASS"
                 width={110}
                 height={110}
               />
