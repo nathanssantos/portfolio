@@ -14,7 +14,7 @@ const Hero = () => {
             <h1>Nathan S. Santos.</h1>
           </FadeInContainer>
           <FadeInContainer delay={1250}>
-            <h2>I create digital experiences.</h2>
+            <h2>I build digital experiences.</h2>
           </FadeInContainer>
           <FadeInContainer delay={1400}>
             <h4>
