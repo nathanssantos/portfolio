@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { SCTheme, Section } from "../../style";
-const { colors, fonts } = SCTheme;
+import { colors, fonts, Section } from "../../style";
 
 const Styles = styled(Section)`
   padding: 3rem 0 10rem;

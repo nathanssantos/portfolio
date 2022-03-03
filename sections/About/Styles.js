@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import { Section, media } from "../../style";
-import SCtheme from "../../style/SCTheme";
-const { colors } = SCtheme;
+import { Section, media, colors } from "../../style";
 
 const Styles = styled(Section)`
   .about {

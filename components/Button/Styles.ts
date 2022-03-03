@@ -1,7 +1,6 @@
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
-import { SCTheme, Section } from "../../style";
-const { colors, fonts } = SCTheme;
+import { colors } from "../../style";
 
 const Styles = styled(Button)`
   position: relative;

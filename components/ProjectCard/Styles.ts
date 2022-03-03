@@ -1,7 +1,6 @@
 import Card from "@mui/material/Card";
 import { styled } from "@mui/material/styles";
-import { Section, media, SCTheme } from "../../style";
-const { colors, transition } = SCTheme;
+import { colors, transition } from "../../style";
 
 const Styles = styled(Card)`
   flex: 1;

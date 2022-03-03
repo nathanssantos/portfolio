@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import SCTheme from "./SCTheme";
-const { colors, fonts, transition } = SCTheme;
+import { colors, fonts, transition } from "./Theme";
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -306,7 +305,7 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
-    transition: ${SCTheme.transition};
+    transition: ${transition};
     color: currentColor;
     display: inline-block;
   }
@@ -331,7 +330,7 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     border: 0;
     border-radius: 0;
-    transition: ${SCTheme.transition};
+    transition: ${transition};
     &:focus,
     &:active {
       outline: 0;

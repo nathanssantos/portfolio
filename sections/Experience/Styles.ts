@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Section } from "../../style";
-import { SCTheme, media } from "../../style";
 
 const Styles = styled(Section)`
   .MuiList-root {

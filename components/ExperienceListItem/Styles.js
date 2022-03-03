@@ -1,7 +1,6 @@
 import Card from "@mui/material/Card";
 import styled from "styled-components";
-import { media, SCTheme } from "../../style";
-const { colors, transition } = SCTheme;
+import { media, colors, transition } from "../../style";
 
 const Styles = styled(Card)`
   padding: 2rem;

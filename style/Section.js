@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { SCTheme, media } from ".";
-const { colors, fonts } = SCTheme;
+import { colors, fonts, media } from ".";
 
 const Section = styled.section`
   margin-bottom: 6rem;
@@ -24,7 +23,6 @@ const Section = styled.section`
     .fade-in-container-wrapper,
     .transition-container {
       width: 100%;
-      /* display: flex; */
     }
 
     h2 {
