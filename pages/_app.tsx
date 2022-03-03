@@ -1,10 +1,21 @@
 import Head from "next/head";
 import type { AppProps } from "next/app";
+import { CacheProvider, EmotionCache } from "@emotion/react";
 import { Layout, ThemeProvider } from "../components";
+import createEmotionCache from "../createEmotionCache";
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
+// Client-side cache, shared for the whole session of the user in the browser.
+const clientSideEmotionCache = createEmotionCache();
+
+interface MyAppProps extends AppProps {
+  emotionCache?: EmotionCache;
+}
+
+const MyApp = (props: MyAppProps) => {
+  const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+
   return (
-    <div className="app">
+    <CacheProvider value={emotionCache}>
       <Head>
         <title>Nathan S. Santos</title>
         <meta name="description" content="My front-end portfolio." />
@@ -19,7 +30,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           <Component {...pageProps} />
         </Layout>
       </ThemeProvider>
-    </div>
+    </CacheProvider>
   );
 };
 export default MyApp;
