@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { SCTheme } from "../../style";
-const { fonts, colors } = SCTheme;
+import { fonts, colors } from "../../style";
 
 const Styles = styled.footer`
   text-align: center;

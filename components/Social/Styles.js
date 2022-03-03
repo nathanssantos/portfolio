@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { media, SCTheme } from "../../style";
-const { colors, fonts } = SCTheme;
+import { media, colors, fonts } from "../../style";
 
 const Styles = styled.section`
   .left,

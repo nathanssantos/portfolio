@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { SCTheme } from "../../style";
-const { colors, fonts } = SCTheme;
+import { colors, fonts } from "../../style";
 
 const Styles = styled.nav`
   ul {

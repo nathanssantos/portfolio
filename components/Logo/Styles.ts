@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { SCTheme } from "../../style";
-const { colors } = SCTheme;
+import { colors } from "../../style";
 
 const Styles = styled.div`
   /* background: linear-gradient(

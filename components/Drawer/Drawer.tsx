@@ -3,11 +3,9 @@ import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Menu } from "../";
-import { SCTheme } from "../../style";
+import { colors } from "../../style";
 
 import StyledBox from "./Styles";
-
-const { colors } = SCTheme;
 
 const Drawer = () => {
   const [isOpen, setIsOpen] = useState(false);
