@@ -1,29 +1,45 @@
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Image from "next/image";
+import { CardProps } from "@mui/material/Card";
 
 import Styles from "./Styles";
 
-// interface ExpereinceListItemProps {
+// export interface ExpereinceListItemProps extends CardProps {
 //   name: string;
 //   image: string;
 //   description: string;
-//   url: string;
+//   href: string;
 //   width: number;
 //   height: number;
 //   stack: string;
+//   work: string;
+//   component?: string;
+//   target?: string;
+//   rel?: string;
 // }
 
 const ExpereinceListItem = (props /* : ExpereinceListItemProps */) => {
-  const { name, image, description, url, width, height, work, stack } = props;
+  const {
+    name,
+    image,
+    description,
+    href,
+    width,
+    height,
+    work,
+    stack,
+    target = "_blank",
+    rel = "noreferrer",
+  } = props;
 
   return (
     <Styles
       component="a"
       className="experience__list__item"
-      href={url}
-      target="_blank"
-      rel="noreferrer"
+      href={href}
+      target={target}
+      rel={rel}
     >
       <Box className="experience__list__item__content">
         <Box className="experience__list__item__image">
