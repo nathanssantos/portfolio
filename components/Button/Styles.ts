@@ -1,8 +1,9 @@
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import { colors } from "../../style";
+import { CustomButtonProps } from "./Button";
 
-const Styles = styled(Button)`
+const Styles = styled(Button)<CustomButtonProps>`
   position: relative;
   background: linear-gradient(
     94.23deg,
