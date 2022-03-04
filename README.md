@@ -4,7 +4,8 @@ Thanks to [Brittany Chiang](https://github.com/bchiang7) for the excellent websi
 
 ## To do
 
-- Solve the styled-components loading delay problem on mount app
-- Improve SEO and acessibility
-- App loader
-- Improve experience and project cards
+[ ] Solve the styled-components loading delay problem on mount app
+[ ] Improve SEO and acessibility
+[ ] App loader
+[ ] Improve experience and project cards
+[ ] Add Framer Motion for animations
