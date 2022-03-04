@@ -5,6 +5,11 @@ const Styles = styled(Section)`
   .MuiList-root {
     display: grid;
     gap: 1rem;
+    > .fade-in-container-wrapper {
+      .transition-container {
+        display: flex;
+      }
+    }
   }
 `;
 

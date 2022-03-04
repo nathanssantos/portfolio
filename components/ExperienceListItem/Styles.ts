@@ -61,6 +61,9 @@ const Styles = styled(Card)`
 
     &__work {
       margin-top: 0.5rem;
+      .MuiTypography-root {
+        transition: ${transition};
+      }
     }
 
     &__stack {
