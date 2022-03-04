@@ -2,10 +2,6 @@ import styled from "styled-components";
 import { media, colors, fonts } from "../../style";
 
 const Styles = styled.section`
-  .left,
-  .right {
-  }
-
   .left {
     ${media.bp900`
       left: 2.25rem;
@@ -50,7 +46,7 @@ const Styles = styled.section`
         &::after {
           content: "";
           width: 0.063rem;
-          background: linear-gradient(transparent, ${colors.slate});
+          background: linear-gradient(transparent, #a8b2d1);
           transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
           flex: 1;
           margin-top: 0.5rem;
