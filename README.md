@@ -5,6 +5,7 @@ Thanks to [Brittany Chiang](https://github.com/bchiang7) for the excellent websi
 ## To do
 
 - Solve the styled-components loading delay problem on mount app
-- Improve SEO and acessibility
-- App loader
 - Improve experience and project cards
+- Testimonials carousel
+- App loader
+- Improve SEO and acessibility
