@@ -12,4 +12,4 @@ Thanks to [Brittany Chiang](https://github.com/bchiang7) for the excellent websi
 
 [ ] Improve experience and project cards
 
-[ ] Add Framer Motion for animations
+[X] Add Framer Motion for animations

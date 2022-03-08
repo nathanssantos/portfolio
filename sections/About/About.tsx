@@ -45,9 +45,9 @@ const About = () => {
                   <li>React.js</li>
                   <li>React Native</li>
                   <li>Next.js</li>
-                  <li>Vue.js</li>
-                  <li>WordPress</li>
                   <li>Node.js</li>
+                  <li>Styled Components</li>
+                  <li>SASS</li>
                 </ul>
               </FadeInContainer>
             </div>
