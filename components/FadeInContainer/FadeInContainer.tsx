@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import LazyLoad from "react-lazyload";
-
-import Styles from "./Styles";
+import { motion } from "framer-motion";
 
 interface TransitionContainerProps {
   children: React.ReactElement;
@@ -19,18 +18,21 @@ interface FadeInContainerProps {
 
 const TransitionContainer = (props: TransitionContainerProps) => {
   const { children, delay } = props;
-  const [visible, setVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
-      setVisible(true);
-    }, delay);
+    setIsVisible(true);
   }, []);
 
   return (
-    <Styles className="transition-container" visible={visible}>
+    <motion.div
+      animate={{ y: isVisible ? 0 : 16, opacity: isVisible ? 1 : 0 }}
+      transition={{ duration: 0.25, delay: delay / 1000 }}
+      initial={false}
+      className="transition-container"
+    >
       {children}
-    </Styles>
+    </motion.div>
   );
 };
 
