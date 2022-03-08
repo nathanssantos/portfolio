@@ -65,7 +65,7 @@ const Styles = styled(Section)`
       grid-template-columns: repeat(2, 1fr);
       align-self: flex-start;
       row-gap: 0.5rem;
-      column-gap: 1rem;
+      column-gap: 2rem;
 
       li {
         position: relative;
