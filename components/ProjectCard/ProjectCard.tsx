@@ -6,6 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import Styles from "./Styles";
 
 interface ProjectCardProps {
@@ -25,7 +26,7 @@ const ProjectCard = (props: ProjectCardProps) => {
     <Styles className="project-card">
       <CardContent
         component="a"
-        href={homepage}
+        href={homepage?.length ? homepage : url}
         target="_blank"
         rel="noreferrer"
       >
@@ -50,15 +51,28 @@ const ProjectCard = (props: ProjectCardProps) => {
           {language}
         </Typography>
 
-        <IconButton
-          size="small"
-          component="a"
-          href={url}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <GitHubIcon />
-        </IconButton>
+        <Box display="flex" gap={1} alignItems="center">
+          {homepage && (
+            <IconButton
+              size="small"
+              component="a"
+              href={homepage}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <OpenInNewIcon />
+            </IconButton>
+          )}
+          <IconButton
+            size="small"
+            component="a"
+            href={url}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GitHubIcon />
+          </IconButton>
+        </Box>
       </CardActions>
     </Styles>
   );

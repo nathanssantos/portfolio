@@ -4,7 +4,7 @@ Thanks to [Brittany Chiang](https://github.com/bchiang7) for the excellent websi
 
 ## To do
 
-[ ] Solve the styled-components loading delay problem on mount app
+[ ] Solve the styled-components loading delay problem on app mount
 
 [ ] Improve SEO and acessibility
 
