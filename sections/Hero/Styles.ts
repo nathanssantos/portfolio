@@ -1,13 +1,20 @@
 import styled from "styled-components";
-import { colors, fonts, Section } from "../../style";
+import { colors, fonts, Section, media } from "../../style";
 
 const Styles = styled(Section)`
-  padding: 3rem 0 10rem;
+  padding: 3rem 0 0;
   min-height: calc(100vh - 4rem);
   margin-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  .MuiContainer-root {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
 
   .content {
     display: flex;
@@ -53,6 +60,48 @@ const Styles = styled(Section)`
       a {
         color: ${colors.green};
       }
+    }
+  }
+
+  @keyframes scroll {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+      -webkit-transform: translateY(0.438rem);
+      transform: translateY(0.438rem);
+    }
+  }
+
+  .scroll-to-icon {
+    align-self: center;
+    width: 1.25rem;
+    height: 1.875rem;
+    box-shadow: inset 0 0 0 0.125rem ${colors.slate};
+    border-radius: 1.563rem;
+    position: relative;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+
+    &::after {
+      content: "";
+      width: 0.25rem;
+      height: 0.375rem;
+      background: ${colors.slate};
+      margin-left: 0.5rem;
+      top: 0.5rem;
+      border-radius: 0.125rem;
+      -webkit-animation-duration: 1.5s;
+      animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-name: scroll;
+      animation-name: scroll;
+      position: absolute;
+      transition: all 0.25s ease-in-out;
     }
   }
 `;

@@ -27,7 +27,7 @@ const TransitionContainer = (props: TransitionContainerProps) => {
   return (
     <motion.div
       animate={{ y: isVisible ? 0 : 16, opacity: isVisible ? 1 : 0 }}
-      transition={{ duration: 0.25, delay: delay / 1000 }}
+      transition={{ duration: 0.5, delay: delay / 1000 }}
       initial={false}
       className="transition-container"
     >
