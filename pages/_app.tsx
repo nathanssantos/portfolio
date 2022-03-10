@@ -25,7 +25,10 @@ const MyApp = (props: MyAppProps) => {
     <CacheProvider value={emotionCache}>
       <Head>
         <title>Nathan S. Santos</title>
-        <meta name="description" content="My front-end portfolio." />
+        <meta
+          name="description"
+          content="I’m a Front-end engineer with 4 years of experience specializing in building high-quality digital products."
+        />
         <meta
           name="author"
           content="Nathan Silva Santos <nathansilvasantos@gmail.com>"
