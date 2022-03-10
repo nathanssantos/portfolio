@@ -64,6 +64,7 @@ const Hero = () => {
           className="scroll-to-icon"
           animate={{
             opacity: scrollIconIsVisible ? 1 : 0,
+            transform: `scale(${scrollIconIsVisible ? 1 : 0})`,
           }}
           transition={{ duration: 0.25 }}
           initial={false}
