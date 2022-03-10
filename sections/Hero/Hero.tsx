@@ -1,8 +1,32 @@
+import { useState, useEffect } from "react";
 import Container from "@mui/material/Container";
+import { motion } from "framer-motion";
 import { FadeInContainer } from "../../components";
 import Styles from "./Styles";
 
 const Hero = () => {
+  const [scrollIconIsVisible, setScrollIconIsVisible] = useState(true);
+
+  let lastScrollTop = 0;
+
+  const detectScrollDirection = () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > 100) {
+      setScrollIconIsVisible(false);
+    } else {
+      setScrollIconIsVisible(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", detectScrollDirection, false);
+
+    return () => {
+      window.removeEventListener("scroll", detectScrollDirection, false);
+    };
+  }, []);
+
   return (
     <Styles>
       <Container maxWidth="lg">
@@ -34,6 +58,17 @@ const Hero = () => {
           </FadeInContainer>
         </div>
       </Container>
+      <FadeInContainer delay={2150}>
+        <motion.a
+          href="#about"
+          className="scroll-to-icon"
+          animate={{
+            opacity: scrollIconIsVisible ? 1 : 0,
+          }}
+          transition={{ duration: 0.25 }}
+          initial={false}
+        />
+      </FadeInContainer>
     </Styles>
   );
 };

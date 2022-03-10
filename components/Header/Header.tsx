@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
+import { motion } from "framer-motion";
 import Styles from "./Styles";
 import { Drawer, Menu, FadeInContainer } from "../";
 
@@ -9,15 +10,15 @@ const Header = () => {
   let lastScrollTop = 0;
 
   const detectScrollDirection = () => {
-    const st = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (st > lastScrollTop) {
+    if (scrollTop > lastScrollTop) {
       setHeaderShown(false);
     } else {
       setHeaderShown(true);
     }
 
-    lastScrollTop = st <= 0 ? 0 : st;
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
   };
 
   useEffect(() => {
@@ -30,12 +31,12 @@ const Header = () => {
 
   return (
     <AppBar
+      component={motion.div}
       className="header"
       position="sticky"
-      style={{
-        transform: headerShown ? "none" : "translate3d(0, -100%,0)",
-        transition: "transform 0.25s cubic-bezier(0.645,0.045,0.355,1)",
-      }}
+      animate={{ y: headerShown ? 0 : "-100%", opacity: headerShown ? 1 : 0 }}
+      transition={{ duration: 0.25 }}
+      initial={false}
     >
       <Toolbar>
         <Styles>

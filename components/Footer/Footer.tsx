@@ -8,18 +8,7 @@ const Footer = () => {
     <Styles className="footer">
       <Social />
       <Container>
-        <div>
-          Design inspired by{" "}
-          <a
-            href="https://brittanychiang.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="underline-hover"
-          >
-            Brittany Chiang
-          </a>{" "}
-          and built by Nathan S. Santos
-        </div>
+        <div>Built by Nathan S. Santos</div>
       </Container>
     </Styles>
   );
