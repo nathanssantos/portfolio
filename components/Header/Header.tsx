@@ -40,14 +40,14 @@ const Header = () => {
     >
       <Toolbar>
         <Styles>
-          <FadeInContainer delay={200}>
+          <FadeInContainer delay={1000}>
             <div className="header__logo"></div>
           </FadeInContainer>
           <div className="header__menu">
             <Menu />
           </div>
           <div className="header__drawer">
-            <FadeInContainer delay={400}>
+            <FadeInContainer delay={1150}>
               <Drawer />
             </FadeInContainer>
           </div>
