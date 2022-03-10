@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colors, fonts, media } from ".";
 
 const Section = styled.section`
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
   padding-top: 4rem;
 
   .content {
