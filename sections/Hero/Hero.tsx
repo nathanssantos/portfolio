@@ -7,8 +7,6 @@ import Styles from "./Styles";
 const Hero = () => {
   const [scrollIconIsVisible, setScrollIconIsVisible] = useState(true);
 
-  let lastScrollTop = 0;
-
   const detectScrollDirection = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -31,16 +29,16 @@ const Hero = () => {
     <Styles>
       <Container maxWidth="lg">
         <div className="content">
-          <FadeInContainer delay={950}>
+          <FadeInContainer delay={1300}>
             <h3>Hi, my name is</h3>
           </FadeInContainer>
-          <FadeInContainer delay={1100}>
+          <FadeInContainer delay={1450}>
             <h1>Nathan Santos.</h1>
           </FadeInContainer>
-          <FadeInContainer delay={1250}>
+          <FadeInContainer delay={1600}>
             <h2>I build digital experiences.</h2>
           </FadeInContainer>
-          <FadeInContainer delay={1400}>
+          <FadeInContainer delay={1750}>
             <h4>
               I’m a Front-end engineer with 4 years of experience specializing
               in building high-quality digital products. Currently, I’m Tech
@@ -58,7 +56,7 @@ const Hero = () => {
           </FadeInContainer>
         </div>
       </Container>
-      <FadeInContainer delay={2150}>
+      <FadeInContainer delay={2450}>
         <motion.a
           href="#about"
           className="scroll-to-icon"

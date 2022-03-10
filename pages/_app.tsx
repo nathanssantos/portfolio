@@ -1,6 +1,8 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import type { AppProps } from "next/app";
 import { CacheProvider, EmotionCache } from "@emotion/react";
+import { motion } from "framer-motion";
 import { Layout, ThemeProvider } from "../components";
 import createEmotionCache from "../createEmotionCache";
 
@@ -13,6 +15,11 @@ interface MyAppProps extends AppProps {
 
 const MyApp = (props: MyAppProps) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+  const [appIsVisible, setAppIsVisible] = useState(false);
+
+  useEffect(() => {
+    setAppIsVisible(true);
+  }, []);
 
   return (
     <CacheProvider value={emotionCache}>
@@ -25,11 +32,19 @@ const MyApp = (props: MyAppProps) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ThemeProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </ThemeProvider>
+      <motion.div
+        animate={{
+          opacity: appIsVisible ? 1 : 0,
+        }}
+        transition={{ duration: 0.5, delay: 1 }}
+        initial={false}
+      >
+        <ThemeProvider>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </ThemeProvider>
+      </motion.div>
     </CacheProvider>
   );
 };

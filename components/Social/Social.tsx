@@ -12,7 +12,7 @@ const Social = () => {
     <Styles className="social">
       <div className="content">
         <div className="left">
-          <FadeInContainer delay={1550}>
+          <FadeInContainer delay={1900}>
             <IconButton
               component="a"
               href="https://github.com/nathanssantos/"
@@ -22,7 +22,7 @@ const Social = () => {
               <GitHubIcon />
             </IconButton>
           </FadeInContainer>
-          <FadeInContainer delay={1700}>
+          <FadeInContainer delay={2150}>
             <IconButton
               component="a"
               href="https://www.instagram.com/nathanssantosdev/"
@@ -32,7 +32,7 @@ const Social = () => {
               <InstagramIcon />
             </IconButton>
           </FadeInContainer>
-          <FadeInContainer delay={1850}>
+          <FadeInContainer delay={2300}>
             <IconButton
               component="a"
               href="https://www.linkedin.com/in/nathan-s-santos-4b2637163/"
@@ -44,7 +44,7 @@ const Social = () => {
           </FadeInContainer>
         </div>
         <div className="right">
-          <FadeInContainer delay={2000}>
+          <FadeInContainer delay={1900}>
             <div className="email">
               <a
                 href="mailto:nathansilvasantos@gmail.com"
