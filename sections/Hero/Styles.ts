@@ -103,6 +103,13 @@ const Styles = styled(Section)`
       position: absolute;
       transition: all 0.25s ease-in-out;
     }
+
+    &:hover {
+      box-shadow: inset 0 0 0 0.125rem ${colors.green};
+      &::after {
+        background: ${colors.green};
+      }
+    }
   }
 `;
 
