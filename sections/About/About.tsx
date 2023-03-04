@@ -28,10 +28,10 @@ const About = () => {
             <div className="about__text">
               <FadeInContainer lazyLoad>
                 <p>
-                  Passionate about learning, applying new technologies, and
+                  Passionate about learning, applying new technologies and
                   constantly improving my skills. As a developer, I aim to write
                   clean code which can be easily read, tested, maintained,
-                  reused, and extended. I am highly committed to my work, always
+                  reused and extended. I am highly committed to my work, always
                   doing my best to push initiatives to successful completion.
                 </p>
               </FadeInContainer>
@@ -45,9 +45,11 @@ const About = () => {
                   <li>React.js</li>
                   <li>React Native</li>
                   <li>Next.js</li>
+                  <li>Svelte</li>
+                  <li>Electron.js</li>
                   <li>Node.js</li>
-                  <li>Styled Components</li>
-                  <li>SASS</li>
+                  <li>Jest</li>
+                  <li>Cypress</li>
                 </ul>
               </FadeInContainer>
             </div>

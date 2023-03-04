@@ -28,11 +28,11 @@ export default async function handler(
 
     const favoriteRepositories = [
       "evolution-graph",
-      "clockify-teams",
-      "portfolio",
-      "react-vite-boilerplate",
-      "react-native-boilerplate",
       "podjs",
+      "react-ts-boilerplate",
+      "clockify-teams",
+      "fractal-tree",
+      "pure-components",
     ];
 
     const filteredRepositories = data.filter(({ name }: Repository) =>
