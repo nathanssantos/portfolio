@@ -26,7 +26,7 @@ const Projects = (props: ProjectsProps) => {
         <div className="content">
           <header>
             <FadeInContainer lazyLoad>
-              <h2>My Open Source Projects</h2>
+              <h2>Projects</h2>
             </FadeInContainer>
           </header>
           <div className="card-list">

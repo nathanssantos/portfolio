@@ -1,6 +1,5 @@
 import Container from "@mui/material/Container";
 import { Social } from "../";
-import { FadeInContainer } from "../";
 import Styles from "./Styles";
 
 const Footer = () => {
@@ -8,7 +7,7 @@ const Footer = () => {
     <Styles className="footer">
       <Social />
       <Container>
-        <div>Built by Nathan S. Santos</div>
+        <div>Created by Nathan S. Santos</div>
       </Container>
     </Styles>
   );
