@@ -52,7 +52,7 @@ const Styles = styled(Section)`
     }
 
     h4 {
-      max-width: 25rem;
+      max-width: 30rem;
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.5rem;
