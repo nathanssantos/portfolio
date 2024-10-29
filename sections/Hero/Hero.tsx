@@ -40,7 +40,7 @@ const Hero = () => {
           </FadeInContainer>
           <FadeInContainer delay={1750}>
             <h4>
-              I’m a software engineer with 4+ years of experience specializing in building high-quality digital products.
+              I’m a software engineer with 6+ years of experience specializing in building high-quality digital products.
               <br/>
               Currently, I’m Front-end Chapter Lead at{" "}
               <a
