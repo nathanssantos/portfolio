@@ -1,3 +1,12 @@
-# Nathan S. Santos Portfolio
+# Nathan S. Santos — Portfolio
 
-My portfolio buit with Next.js
+Personal portfolio built with [Next.js](https://nextjs.org/) and TypeScript.
+
+**[Live](https://nathanssantos.vercel.app/)**
+
+## Getting Started
+
+```bash
+yarn install
+yarn dev
+```

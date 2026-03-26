@@ -40,18 +40,10 @@ const Hero = () => {
           </FadeInContainer>
           <FadeInContainer delay={1750}>
             <h4>
-              I’m a software engineer with 4+ years of experience specializing in building high-quality digital products.
+              I’m a fullstack software engineer with 7+ years of experience
+              building high-performance web and desktop applications.
               <br/>
-              Currently, I’m Front-end Chapter Lead at{" "}
-              <a
-                href="https://w16.dev/"
-                target="_blank"
-                rel="noreferrer"
-                className="underline-hover"
-              >
-                W16 Software House
-              </a>
-              .
+              Specialized in React, TypeScript, and Node.js.
             </h4>
           </FadeInContainer>
         </div>
