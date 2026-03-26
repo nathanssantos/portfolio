@@ -17,6 +17,19 @@ const Experience = () => {
           <List>
             <FadeInContainer lazyLoad>
               <ExperienceListItem
+                name="Clint Digital"
+                image="/assets/images/clint.svg"
+                href="https://clint.digital"
+                description="B2B SaaS platform for business communication and sales management. Serving thousands of companies across Brazil."
+                work="As a Senior Fullstack Developer, I built core modules (Subscriptions, Payments, Permissions, Chat), led the React 16 → 19 migration, implemented Chakra UI 3 replacing Bootstrap 4, created the company's design system, and modernized the Node.js build tooling across the monorepo."
+                stack="React 19 | TypeScript | Node.js | Chakra UI 3"
+                width={110}
+                height={40}
+              />
+            </FadeInContainer>
+
+            <FadeInContainer lazyLoad>
+              <ExperienceListItem
                 name="Rokkos"
                 image="/assets/images/rokkos.png"
                 href="https://web.rokkos.app"

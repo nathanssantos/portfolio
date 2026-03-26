@@ -28,11 +28,11 @@ const About = () => {
             <div className="about__text">
               <FadeInContainer lazyLoad>
                 <p>
-                  Passionate about learning, applying new technologies and
-                  constantly improving my skills. As a developer, I aim to write
-                  clean code which can be easily read, tested, maintained,
-                  reused and extended. I am highly committed to my work, always
-                  doing my best to push initiatives to successful completion.
+                  Fullstack engineer focused on clean architecture, performance,
+                  and delivering polished user experiences. I've led major
+                  migrations (React 16 → 19), built design systems from scratch,
+                  and shipped products across web, mobile, and desktop platforms.
+                  Self-taught and coding daily since 2018.
                 </p>
               </FadeInContainer>
               <FadeInContainer lazyLoad>
@@ -40,16 +40,18 @@ const About = () => {
               </FadeInContainer>
               <FadeInContainer lazyLoad>
                 <ul className="about__skills">
-                  <li>JavaScript (ES6+)</li>
                   <li>TypeScript</li>
-                  <li>React.js</li>
-                  <li>React Native</li>
+                  <li>React 19</li>
                   <li>Next.js</li>
-                  <li>Svelte</li>
-                  <li>Electron.js</li>
+                  <li>React Native</li>
+                  <li>Electron</li>
                   <li>Node.js</li>
-                  <li>Jest</li>
-                  <li>Cypress</li>
+                  <li>Fastify / tRPC</li>
+                  <li>PostgreSQL</li>
+                  <li>Chakra UI</li>
+                  <li>Canvas API</li>
+                  <li>Vitest / Cypress</li>
+                  <li>Vite</li>
                 </ul>
               </FadeInContainer>
             </div>
